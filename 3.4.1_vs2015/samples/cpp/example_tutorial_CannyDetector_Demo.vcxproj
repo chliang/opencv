@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E3CF0367-352B-3D6B-8F6C-8C2F0C6BABEF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>(sample) CannyDetector_Demo</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\project\opencv.git\3.4.1_vs2015\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">example_tutorial_CannyDetector_Demo.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">example_tutorial_CannyDetector_Demo</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\project\opencv.git\3.4.1_vs2015\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">example_tutorial_CannyDetector_Demo.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">example_tutorial_CannyDetector_Demo</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\project\opencv.git\modules\videostab\include;E:\project\opencv.git\modules\stitching\include;E:\project\opencv.git\modules\calib3d\include;E:\project\opencv.git\modules\features2d\include;E:\project\opencv.git\modules\superres\include;E:\project\opencv.git\modules\highgui\include;E:\project\opencv.git\modules\videoio\include;E:\project\opencv.git\modules\shape\include;E:\project\opencv.git\modules\imgcodecs\include;E:\project\opencv.git\modules\dnn\include;E:\project\opencv.git\modules\video\include;E:\project\opencv.git\modules\photo\include;E:\project\opencv.git\modules\objdetect\include;E:\project\opencv.git\modules\ml\include;E:\project\opencv.git\modules\imgproc\include;E:\project\opencv.git\modules\flann\include;E:\project\opencv.git\modules\core\include;E:\project\opencv.git\modules\world\include;E:\project\opencv.git\3.4.1_vs2015\3rdparty\ippicv\ippicv_win\include;E:\project\opencv.git\3.4.1_vs2015\3rdparty\ippicv\ippiw_win\include;E:\project\opencv.git\3.4.1_vs2015;D:\tbb2018_20171205oss_win\tbb2018_20171205oss\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4251;4324;4275;4512;4589</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProcessorNumber>8</ProcessorNumber>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_VARIADIC_MAX=10;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_VARIADIC_MAX=10;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\project\opencv.git\modules\videostab\include;E:\project\opencv.git\modules\stitching\include;E:\project\opencv.git\modules\calib3d\include;E:\project\opencv.git\modules\features2d\include;E:\project\opencv.git\modules\superres\include;E:\project\opencv.git\modules\highgui\include;E:\project\opencv.git\modules\videoio\include;E:\project\opencv.git\modules\shape\include;E:\project\opencv.git\modules\imgcodecs\include;E:\project\opencv.git\modules\dnn\include;E:\project\opencv.git\modules\video\include;E:\project\opencv.git\modules\photo\include;E:\project\opencv.git\modules\objdetect\include;E:\project\opencv.git\modules\ml\include;E:\project\opencv.git\modules\imgproc\include;E:\project\opencv.git\modules\flann\include;E:\project\opencv.git\modules\core\include;E:\project\opencv.git\modules\world\include;E:\project\opencv.git\3.4.1_vs2015\3rdparty\ippicv\ippicv_win\include;E:\project\opencv.git\3.4.1_vs2015\3rdparty\ippicv\ippiw_win\include;E:\project\opencv.git\3.4.1_vs2015;D:\tbb2018_20171205oss_win\tbb2018_20171205oss\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\project\opencv.git\modules\videostab\include;E:\project\opencv.git\modules\stitching\include;E:\project\opencv.git\modules\calib3d\include;E:\project\opencv.git\modules\features2d\include;E:\project\opencv.git\modules\superres\include;E:\project\opencv.git\modules\highgui\include;E:\project\opencv.git\modules\videoio\include;E:\project\opencv.git\modules\shape\include;E:\project\opencv.git\modules\imgcodecs\include;E:\project\opencv.git\modules\dnn\include;E:\project\opencv.git\modules\video\include;E:\project\opencv.git\modules\photo\include;E:\project\opencv.git\modules\objdetect\include;E:\project\opencv.git\modules\ml\include;E:\project\opencv.git\modules\imgproc\include;E:\project\opencv.git\modules\flann\include;E:\project\opencv.git\modules\core\include;E:\project\opencv.git\modules\world\include;E:\project\opencv.git\3.4.1_vs2015\3rdparty\ippicv\ippicv_win\include;E:\project\opencv.git\3.4.1_vs2015\3rdparty\ippicv\ippiw_win\include;E:\project\opencv.git\3.4.1_vs2015;D:\tbb2018_20171205oss_win\tbb2018_20171205oss\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\tbb2018_20171205oss_win\tbb2018_20171205oss\lib\intel64\vc14\tbb_debug.lib;..\..\3rdparty\lib\Debug\ippiwd.lib;..\..\3rdparty\ippicv\ippicv_win\lib\intel64\ippicvmt.lib;..\..\lib\Debug\opencv_world341d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/project/opencv.git/3.4.1_vs2015/bin/Debug/example_tutorial_CannyDetector_Demo.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/project/opencv.git/3.4.1_vs2015/bin/Debug/example_tutorial_CannyDetector_Demo.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\project\opencv.git\modules\videostab\include;E:\project\opencv.git\modules\stitching\include;E:\project\opencv.git\modules\calib3d\include;E:\project\opencv.git\modules\features2d\include;E:\project\opencv.git\modules\superres\include;E:\project\opencv.git\modules\highgui\include;E:\project\opencv.git\modules\videoio\include;E:\project\opencv.git\modules\shape\include;E:\project\opencv.git\modules\imgcodecs\include;E:\project\opencv.git\modules\dnn\include;E:\project\opencv.git\modules\video\include;E:\project\opencv.git\modules\photo\include;E:\project\opencv.git\modules\objdetect\include;E:\project\opencv.git\modules\ml\include;E:\project\opencv.git\modules\imgproc\include;E:\project\opencv.git\modules\flann\include;E:\project\opencv.git\modules\core\include;E:\project\opencv.git\modules\world\include;E:\project\opencv.git\3.4.1_vs2015\3rdparty\ippicv\ippicv_win\include;E:\project\opencv.git\3.4.1_vs2015\3rdparty\ippicv\ippiw_win\include;E:\project\opencv.git\3.4.1_vs2015;D:\tbb2018_20171205oss_win\tbb2018_20171205oss\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4127;4251;4324;4275;4512;4589</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProcessorNumber>8</ProcessorNumber>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_VARIADIC_MAX=10;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_VARIADIC_MAX=10;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\project\opencv.git\modules\videostab\include;E:\project\opencv.git\modules\stitching\include;E:\project\opencv.git\modules\calib3d\include;E:\project\opencv.git\modules\features2d\include;E:\project\opencv.git\modules\superres\include;E:\project\opencv.git\modules\highgui\include;E:\project\opencv.git\modules\videoio\include;E:\project\opencv.git\modules\shape\include;E:\project\opencv.git\modules\imgcodecs\include;E:\project\opencv.git\modules\dnn\include;E:\project\opencv.git\modules\video\include;E:\project\opencv.git\modules\photo\include;E:\project\opencv.git\modules\objdetect\include;E:\project\opencv.git\modules\ml\include;E:\project\opencv.git\modules\imgproc\include;E:\project\opencv.git\modules\flann\include;E:\project\opencv.git\modules\core\include;E:\project\opencv.git\modules\world\include;E:\project\opencv.git\3.4.1_vs2015\3rdparty\ippicv\ippicv_win\include;E:\project\opencv.git\3.4.1_vs2015\3rdparty\ippicv\ippiw_win\include;E:\project\opencv.git\3.4.1_vs2015;D:\tbb2018_20171205oss_win\tbb2018_20171205oss\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\project\opencv.git\modules\videostab\include;E:\project\opencv.git\modules\stitching\include;E:\project\opencv.git\modules\calib3d\include;E:\project\opencv.git\modules\features2d\include;E:\project\opencv.git\modules\superres\include;E:\project\opencv.git\modules\highgui\include;E:\project\opencv.git\modules\videoio\include;E:\project\opencv.git\modules\shape\include;E:\project\opencv.git\modules\imgcodecs\include;E:\project\opencv.git\modules\dnn\include;E:\project\opencv.git\modules\video\include;E:\project\opencv.git\modules\photo\include;E:\project\opencv.git\modules\objdetect\include;E:\project\opencv.git\modules\ml\include;E:\project\opencv.git\modules\imgproc\include;E:\project\opencv.git\modules\flann\include;E:\project\opencv.git\modules\core\include;E:\project\opencv.git\modules\world\include;E:\project\opencv.git\3.4.1_vs2015\3rdparty\ippicv\ippicv_win\include;E:\project\opencv.git\3.4.1_vs2015\3rdparty\ippicv\ippiw_win\include;E:\project\opencv.git\3.4.1_vs2015;D:\tbb2018_20171205oss_win\tbb2018_20171205oss\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\tbb2018_20171205oss_win\tbb2018_20171205oss\lib\intel64\vc14\tbb.lib;..\..\3rdparty\lib\Release\ippiw.lib;..\..\3rdparty\ippicv\ippicv_win\lib\intel64\ippicvmt.lib;..\..\lib\Release\opencv_world341.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/project/opencv.git/3.4.1_vs2015/bin/Release/example_tutorial_CannyDetector_Demo.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/project/opencv.git/3.4.1_vs2015/bin/Release/example_tutorial_CannyDetector_Demo.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\project\opencv.git\samples\cpp\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/project/opencv.git/samples/cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\cmake-3.9.0-win64-x64\bin\cmake.exe" -HE:/project/opencv.git -BE:/project/opencv.git/3.4.1_vs2015 --check-stamp-file E:/project/opencv.git/3.4.1_vs2015/samples/cpp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/project/opencv.git/samples/cpp/CMakeLists.txt;E:\project\opencv.git\samples\cpp\CMakeLists.txt;E:\project\opencv.git\samples\cpp\tutorial_code\calib3d\real_time_pose_estimation\CMakeLists.txt;E:\project\opencv.git\samples\cpp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\project\opencv.git\3.4.1_vs2015\samples\cpp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/project/opencv.git/samples/cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\cmake-3.9.0-win64-x64\bin\cmake.exe" -HE:/project/opencv.git -BE:/project/opencv.git/3.4.1_vs2015 --check-stamp-file E:/project/opencv.git/3.4.1_vs2015/samples/cpp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/project/opencv.git/samples/cpp/CMakeLists.txt;E:\project\opencv.git\samples\cpp\CMakeLists.txt;E:\project\opencv.git\samples\cpp\tutorial_code\calib3d\real_time_pose_estimation\CMakeLists.txt;E:\project\opencv.git\samples\cpp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\project\opencv.git\3.4.1_vs2015\samples\cpp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\project\opencv.git\samples\cpp\tutorial_code\ImgTrans\CannyDetector_Demo.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\ZERO_CHECK.vcxproj">
+      <Project>{B931BE45-D37C-3530-8F99-8400CC6E45F7}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\3rdparty\ippiw\ippiw.vcxproj">
+      <Project>{183A9578-E79F-321F-8295-DF9363C61D3D}</Project>
+      <Name>ippiw</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_world.vcxproj">
+      <Project>{25A49DF7-CF88-36E0-925D-DDDEF8FFC76D}</Project>
+      <Name>opencv_world</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

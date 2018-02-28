@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\project\opencv.git\modules\core\src\convert.sse4_1.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\imgproc\src\imgwarp.sse4_1.cpp">
+      <Filter>opencv_imgproc\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\imgproc\src\resize.sse4_1.cpp">
+      <Filter>opencv_imgproc\Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\project\opencv.git\modules\world\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="opencv_imgproc\Src">
+      <UniqueIdentifier>{65B42C08-BD6F-3C87-94E3-31FCC5CDBA97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_core\Src">
+      <UniqueIdentifier>{EC9C1663-CF03-3C8C-83CF-1D8ECF1FF084}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_core">
+      <UniqueIdentifier>{478401FC-4C5E-33F8-9E83-4DCA936C1ECC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_imgproc">
+      <UniqueIdentifier>{5E98CB13-2410-3559-9E2F-77C8A3AB6A4D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

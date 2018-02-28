@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\mathfuncs_core.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\imgproc\src\corner.avx.cpp">
+      <Filter>opencv_imgproc\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\accum.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\objdetect\src\haar.avx.cpp">
+      <Filter>opencv_objdetect\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\layers\layers_common.avx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\project\opencv.git\modules\world\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="opencv_objdetect\Src">
+      <UniqueIdentifier>{BBDB8973-66D4-3C58-866F-8816C5DFAF8F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_imgproc\Src">
+      <UniqueIdentifier>{65B42C08-BD6F-3C87-94E3-31FCC5CDBA97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0F7E8307-8EC7-3052-A6B6-9348C8CE8F55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_imgproc">
+      <UniqueIdentifier>{5E98CB13-2410-3559-9E2F-77C8A3AB6A4D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_objdetect">
+      <UniqueIdentifier>{18682B7C-9D35-3A16-A861-AFB096657A6E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3824D4E6-417E-312B-BB12-FA6A3508FFB9}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>uninstall</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\project\opencv.git\3.4.1_vs2015\3rdparty\ippicv\ippicv_win\include;E:\project\opencv.git\3.4.1_vs2015\3rdparty\ippicv\ippiw_win\include;E:\project\opencv.git\3.4.1_vs2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\project\opencv.git\3.4.1_vs2015\3rdparty\ippicv\ippicv_win\include;E:\project\opencv.git\3.4.1_vs2015\3rdparty\ippicv\ippiw_win\include;E:\project\opencv.git\3.4.1_vs2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\project\opencv.git\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/project/opencv.git/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\cmake-3.9.0-win64-x64\bin\cmake.exe" -HE:/project/opencv.git -BE:/project/opencv.git/3.4.1_vs2015 --check-stamp-file E:/project/opencv.git/3.4.1_vs2015/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/project/opencv.git/CMakeLists.txt;E:\project\opencv.git\CMakeLists.txt;E:\project\opencv.git\cmake\OpenCVMinDepVersions.cmake;E:\project\opencv.git\cmake\OpenCVUtils.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CMakeParseArguments.cmake;E:\project\opencv.git\3.4.1_vs2015\CMakeFiles\3.9.0\CMakeSystem.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;E:\project\opencv.git\3.4.1_vs2015\CMakeFiles\3.9.0\CMakeCXXCompiler.cmake;E:\project\opencv.git\3.4.1_vs2015\CMakeFiles\3.9.0\CMakeCCompiler.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\Platform\Windows.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;E:\project\opencv.git\3.4.1_vs2015\CMakeFiles\3.9.0\CMakeRCCompiler.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CMakeRCInformation.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CMakeCInformation.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;E:\project\opencv.git\cmake\OpenCVDownload.cmake;E:\project\opencv.git\cmake\OpenCVDetectCXXCompiler.cmake;E:\project\opencv.git\cmake\OpenCVVersion.cmake;E:\project\opencv.git\modules\core\include\opencv2\core\version.hpp;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\FindGit.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;E:\project\opencv.git\cmake\OpenCVDetectPython.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\FindPythonInterp.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;E:\project\opencv.git\cmake\OpenCVCompilerOptions.cmake;E:\project\opencv.git\cmake\OpenCVCompilerOptimizations.cmake;E:\project\opencv.git\cmake\OpenCVCRTLinkage.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\ProcessorCount.cmake;E:\project\opencv.git\cmake\OpenCVPCHSupport.cmake;E:\project\opencv.git\cmake\OpenCVModule.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\TestBigEndian.cmake;E:\project\opencv.git\cmake\OpenCVFindLibsGrfmt.cmake;E:\project\opencv.git\cmake\OpenCVFindLibsGUI.cmake;E:\project\opencv.git\cmake\checks\win32uitest.cpp;E:\project\opencv.git\cmake\OpenCVFindLibsVideo.cmake;E:\project\opencv.git\cmake\checks\vfwtest.cpp;E:\project\opencv.git\cmake\FindGstreamerWindows.cmake;E:\project\opencv.git\3rdparty\ffmpeg\ffmpeg.cmake;E:\project\opencv.git\3.4.1_vs2015\3rdparty\ffmpeg\ffmpeg_version.cmake;E:\project\opencv.git\cmake\OpenCVFindLibsPerf.cmake;E:\project\opencv.git\cmake\OpenCVDetectTBB.cmake;E:\project\opencv.git\cmake\OpenCVFindIPP.cmake;E:\project\opencv.git\3rdparty\ippicv\ippicv.cmake;E:\project\opencv.git\cmake\OpenCVFindIPPIW.cmake;E:\project\opencv.git\cmake\OpenCVDetectCUDA.cmake;E:\project\opencv.git\cmake\FindCUDA.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;E:\project\opencv.git\cmake\OpenCVFindLAPACK.cmake;E:\project\opencv.git\cmake\OpenCVFindMKL.cmake;E:\project\opencv.git\cmake\OpenCVFindOpenBLAS.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\FindLAPACK.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CheckFunctionExists.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CMakePushCheckState.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\FindBLAS.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CheckFunctionExists.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CheckFortranFunctionExists.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CMakePushCheckState.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\FindThreads.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CheckLibraryExists.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CheckSymbolExists.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;E:\project\opencv.git\cmake\OpenCVFindProtobuf.cmake;E:\project\opencv.git\cmake\OpenCVDetectApacheAnt.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\FindJNI.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CMakeFindJavaCommon.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;E:\project\opencv.git\cmake\OpenCVDetectOpenCL.cmake;E:\project\opencv.git\cmake\checks\opencl.cpp;E:\project\opencv.git\cmake\OpenCVDetectDirectX.cmake;E:\project\opencv.git\cmake\checks\directx.cpp;E:\project\opencv.git\cmake\checks\directx.cpp;E:\project\opencv.git\cmake\OpenCVFindMatlab.cmake;E:\project\opencv.git\cmake\OpenCVDetectVTK.cmake;E:\project\opencv.git\cmake\templates\custom_hal.hpp.in;E:\project\opencv.git\cmake\OpenCVDetectTrace.cmake;E:\project\opencv.git\cmake\OpenCVExtraTargets.cmake;E:\project\opencv.git\cmake\templates\cmake_uninstall.cmake.in;E:\project\opencv.git\cmake\OpenCVGenHeaders.cmake;E:\project\opencv.git\cmake\templates\cvconfig.h.in;E:\project\opencv.git\cmake\templates\cvconfig.h.in;E:\project\opencv.git\cmake\templates\cv_cpu_config.h.in;E:\project\opencv.git\cmake\templates\opencv_modules.hpp.in;E:\project\opencv.git\cmake\OpenCVGenPkgconfig.cmake;E:\project\opencv.git\cmake\OpenCVGenAndroidMK.cmake;E:\project\opencv.git\cmake\OpenCVGenConfig.cmake;E:\project\opencv.git\cmake\templates\OpenCVConfig.cmake.in;E:\project\opencv.git\cmake\templates\OpenCVConfig-version.cmake.in;E:\project\opencv.git\cmake\templates\OpenCVConfig-version.cmake.in;E:\project\opencv.git\cmake\templates\OpenCVConfig.cmake.in;E:\project\opencv.git\cmake\templates\OpenCVConfig.root-WIN32.cmake.in;E:\project\opencv.git\cmake\OpenCVGenABI.cmake;E:\project\opencv.git\cmake\OpenCVPackaging.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CPack.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CPackComponent.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Templates\CPackConfig.cmake.in;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Templates\CPackConfig.cmake.in;E:\project\opencv.git\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\project\opencv.git\3.4.1_vs2015\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/project/opencv.git/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\cmake-3.9.0-win64-x64\bin\cmake.exe" -HE:/project/opencv.git -BE:/project/opencv.git/3.4.1_vs2015 --check-stamp-file E:/project/opencv.git/3.4.1_vs2015/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/project/opencv.git/CMakeLists.txt;E:\project\opencv.git\CMakeLists.txt;E:\project\opencv.git\cmake\OpenCVMinDepVersions.cmake;E:\project\opencv.git\cmake\OpenCVUtils.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CMakeParseArguments.cmake;E:\project\opencv.git\3.4.1_vs2015\CMakeFiles\3.9.0\CMakeSystem.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;E:\project\opencv.git\3.4.1_vs2015\CMakeFiles\3.9.0\CMakeCXXCompiler.cmake;E:\project\opencv.git\3.4.1_vs2015\CMakeFiles\3.9.0\CMakeCCompiler.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\Platform\Windows.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;E:\project\opencv.git\3.4.1_vs2015\CMakeFiles\3.9.0\CMakeRCCompiler.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CMakeRCInformation.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CMakeCInformation.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;E:\project\opencv.git\cmake\OpenCVDownload.cmake;E:\project\opencv.git\cmake\OpenCVDetectCXXCompiler.cmake;E:\project\opencv.git\cmake\OpenCVVersion.cmake;E:\project\opencv.git\modules\core\include\opencv2\core\version.hpp;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\FindGit.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;E:\project\opencv.git\cmake\OpenCVDetectPython.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\FindPythonInterp.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;E:\project\opencv.git\cmake\OpenCVCompilerOptions.cmake;E:\project\opencv.git\cmake\OpenCVCompilerOptimizations.cmake;E:\project\opencv.git\cmake\OpenCVCRTLinkage.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\ProcessorCount.cmake;E:\project\opencv.git\cmake\OpenCVPCHSupport.cmake;E:\project\opencv.git\cmake\OpenCVModule.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\TestBigEndian.cmake;E:\project\opencv.git\cmake\OpenCVFindLibsGrfmt.cmake;E:\project\opencv.git\cmake\OpenCVFindLibsGUI.cmake;E:\project\opencv.git\cmake\checks\win32uitest.cpp;E:\project\opencv.git\cmake\OpenCVFindLibsVideo.cmake;E:\project\opencv.git\cmake\checks\vfwtest.cpp;E:\project\opencv.git\cmake\FindGstreamerWindows.cmake;E:\project\opencv.git\3rdparty\ffmpeg\ffmpeg.cmake;E:\project\opencv.git\3.4.1_vs2015\3rdparty\ffmpeg\ffmpeg_version.cmake;E:\project\opencv.git\cmake\OpenCVFindLibsPerf.cmake;E:\project\opencv.git\cmake\OpenCVDetectTBB.cmake;E:\project\opencv.git\cmake\OpenCVFindIPP.cmake;E:\project\opencv.git\3rdparty\ippicv\ippicv.cmake;E:\project\opencv.git\cmake\OpenCVFindIPPIW.cmake;E:\project\opencv.git\cmake\OpenCVDetectCUDA.cmake;E:\project\opencv.git\cmake\FindCUDA.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;E:\project\opencv.git\cmake\OpenCVFindLAPACK.cmake;E:\project\opencv.git\cmake\OpenCVFindMKL.cmake;E:\project\opencv.git\cmake\OpenCVFindOpenBLAS.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\FindLAPACK.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CheckFunctionExists.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CMakePushCheckState.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\FindBLAS.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CheckFunctionExists.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CheckFortranFunctionExists.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CMakePushCheckState.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\FindThreads.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CheckLibraryExists.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CheckSymbolExists.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CheckIncludeFile.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;E:\project\opencv.git\cmake\OpenCVFindProtobuf.cmake;E:\project\opencv.git\cmake\OpenCVDetectApacheAnt.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\FindJNI.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CMakeFindJavaCommon.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\FindPackageMessage.cmake;E:\project\opencv.git\cmake\OpenCVDetectOpenCL.cmake;E:\project\opencv.git\cmake\checks\opencl.cpp;E:\project\opencv.git\cmake\OpenCVDetectDirectX.cmake;E:\project\opencv.git\cmake\checks\directx.cpp;E:\project\opencv.git\cmake\checks\directx.cpp;E:\project\opencv.git\cmake\OpenCVFindMatlab.cmake;E:\project\opencv.git\cmake\OpenCVDetectVTK.cmake;E:\project\opencv.git\cmake\templates\custom_hal.hpp.in;E:\project\opencv.git\cmake\OpenCVDetectTrace.cmake;E:\project\opencv.git\cmake\OpenCVExtraTargets.cmake;E:\project\opencv.git\cmake\templates\cmake_uninstall.cmake.in;E:\project\opencv.git\cmake\OpenCVGenHeaders.cmake;E:\project\opencv.git\cmake\templates\cvconfig.h.in;E:\project\opencv.git\cmake\templates\cvconfig.h.in;E:\project\opencv.git\cmake\templates\cv_cpu_config.h.in;E:\project\opencv.git\cmake\templates\opencv_modules.hpp.in;E:\project\opencv.git\cmake\OpenCVGenPkgconfig.cmake;E:\project\opencv.git\cmake\OpenCVGenAndroidMK.cmake;E:\project\opencv.git\cmake\OpenCVGenConfig.cmake;E:\project\opencv.git\cmake\templates\OpenCVConfig.cmake.in;E:\project\opencv.git\cmake\templates\OpenCVConfig-version.cmake.in;E:\project\opencv.git\cmake\templates\OpenCVConfig-version.cmake.in;E:\project\opencv.git\cmake\templates\OpenCVConfig.cmake.in;E:\project\opencv.git\cmake\templates\OpenCVConfig.root-WIN32.cmake.in;E:\project\opencv.git\cmake\OpenCVGenABI.cmake;E:\project\opencv.git\cmake\OpenCVPackaging.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CPack.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Modules\CPackComponent.cmake;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Templates\CPackConfig.cmake.in;C:\Program Files\cmake-3.9.0-win64-x64\share\cmake-3.9\Templates\CPackConfig.cmake.in;E:\project\opencv.git\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\project\opencv.git\3.4.1_vs2015\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\project\opencv.git\3.4.1_vs2015\CMakeFiles\d4a8fb3a6290b5cad9c948312f2fefde\uninstall.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\cmake-3.9.0-win64-x64\bin\cmake.exe" -P E:/project/opencv.git/3.4.1_vs2015/cmake_uninstall.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/project/opencv.git/3.4.1_vs2015/CMakeFiles/d4a8fb3a6290b5cad9c948312f2fefde/uninstall.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\project\opencv.git\3.4.1_vs2015\CMakeFiles\uninstall</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\cmake-3.9.0-win64-x64\bin\cmake.exe" -P E:/project/opencv.git/3.4.1_vs2015/cmake_uninstall.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/project/opencv.git/3.4.1_vs2015/CMakeFiles/d4a8fb3a6290b5cad9c948312f2fefde/uninstall.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\project\opencv.git\3.4.1_vs2015\CMakeFiles\uninstall</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\project\opencv.git\3.4.1_vs2015\CMakeFiles\uninstall" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\ZERO_CHECK.vcxproj">
+      <Project>{B931BE45-D37C-3530-8F99-8400CC6E45F7}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

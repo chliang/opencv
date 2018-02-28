@@ -1,0 +1,18 @@
+# Target labels
+ Main
+ opencv_highgui
+ AccuracyTest
+# Source files and their labels
+E:/project/opencv.git/modules/highgui/test/test_gui.cpp
+ Main
+ opencv_highgui
+ AccuracyTest
+E:/project/opencv.git/modules/highgui/test/test_main.cpp
+ Main
+ opencv_highgui
+ AccuracyTest
+E:/project/opencv.git/modules/highgui/test/test_precomp.hpp
+ Main
+ opencv_highgui
+ AccuracyTest
+E:/project/opencv.git/modules/world/CMakeLists.txt

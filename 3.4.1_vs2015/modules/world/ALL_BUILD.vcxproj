@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{95EF3B04-0BB5-339F-87F4-C7EE230FBCDD}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\project\opencv.git\3rdparty\libjasper;E:\project\opencv.git\3.4.1_vs2015\3rdparty\libtiff;E:\project\opencv.git\3rdparty\libtiff;E:\project\opencv.git\3rdparty\libpng;E:\project\opencv.git\3rdparty\libwebp\src;E:\project\opencv.git\3rdparty\libjpeg;E:\project\opencv.git\3.4.1_vs2015\3rdparty\zlib;E:\project\opencv.git\3rdparty\zlib;E:\project\opencv.git\3.4.1_vs2015\3rdparty\ippicv\ippicv_win\include;E:\project\opencv.git\3.4.1_vs2015\3rdparty\ippicv\ippiw_win\include;E:\project\opencv.git\3.4.1_vs2015;E:\project\opencv.git\3rdparty\openexr\Half;E:\project\opencv.git\3rdparty\openexr\Iex;E:\project\opencv.git\3rdparty\openexr\IlmThread;E:\project\opencv.git\3rdparty\openexr\Imath;E:\project\opencv.git\3rdparty\openexr\IlmImf;E:\project\opencv.git\3rdparty\include;E:\project\opencv.git\3rdparty\include\ffmpeg_;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\project\opencv.git\3rdparty\libjasper;E:\project\opencv.git\3.4.1_vs2015\3rdparty\libtiff;E:\project\opencv.git\3rdparty\libtiff;E:\project\opencv.git\3rdparty\libpng;E:\project\opencv.git\3rdparty\libwebp\src;E:\project\opencv.git\3rdparty\libjpeg;E:\project\opencv.git\3.4.1_vs2015\3rdparty\zlib;E:\project\opencv.git\3rdparty\zlib;E:\project\opencv.git\3.4.1_vs2015\3rdparty\ippicv\ippicv_win\include;E:\project\opencv.git\3.4.1_vs2015\3rdparty\ippicv\ippiw_win\include;E:\project\opencv.git\3.4.1_vs2015;E:\project\opencv.git\3rdparty\openexr\Half;E:\project\opencv.git\3rdparty\openexr\Iex;E:\project\opencv.git\3rdparty\openexr\IlmThread;E:\project\opencv.git\3rdparty\openexr\Imath;E:\project\opencv.git\3rdparty\openexr\IlmImf;E:\project\opencv.git\3rdparty\include;E:\project\opencv.git\3rdparty\include\ffmpeg_;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\project\opencv.git\modules\world\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/project/opencv.git/modules/world/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\cmake-3.9.0-win64-x64\bin\cmake.exe" -HE:/project/opencv.git -BE:/project/opencv.git/3.4.1_vs2015 --check-stamp-file E:/project/opencv.git/3.4.1_vs2015/modules/world/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/project/opencv.git/modules/world/CMakeLists.txt;E:\project\opencv.git\modules\world\CMakeLists.txt;E:\project\opencv.git\modules\core\CMakeLists.txt;E:\project\opencv.git\modules\flann\CMakeLists.txt;E:\project\opencv.git\modules\imgproc\CMakeLists.txt;E:\project\opencv.git\modules\ml\CMakeLists.txt;E:\project\opencv.git\modules\objdetect\CMakeLists.txt;E:\project\opencv.git\modules\photo\CMakeLists.txt;E:\project\opencv.git\modules\video\CMakeLists.txt;E:\project\opencv.git\modules\dnn\CMakeLists.txt;E:\project\opencv.git\modules\imgcodecs\CMakeLists.txt;E:\project\opencv.git\modules\shape\CMakeLists.txt;E:\project\opencv.git\modules\videoio\CMakeLists.txt;E:\project\opencv.git\modules\highgui\CMakeLists.txt;E:\project\opencv.git\modules\superres\CMakeLists.txt;E:\project\opencv.git\modules\features2d\CMakeLists.txt;E:\project\opencv.git\modules\calib3d\CMakeLists.txt;E:\project\opencv.git\modules\stitching\CMakeLists.txt;E:\project\opencv.git\modules\videostab\CMakeLists.txt;E:\project\opencv.git\cmake\templates\vs_version.rc.in;E:\project\opencv.git\modules\world\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\project\opencv.git\3.4.1_vs2015\modules\world\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/project/opencv.git/modules/world/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\cmake-3.9.0-win64-x64\bin\cmake.exe" -HE:/project/opencv.git -BE:/project/opencv.git/3.4.1_vs2015 --check-stamp-file E:/project/opencv.git/3.4.1_vs2015/modules/world/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/project/opencv.git/modules/world/CMakeLists.txt;E:\project\opencv.git\modules\world\CMakeLists.txt;E:\project\opencv.git\modules\core\CMakeLists.txt;E:\project\opencv.git\modules\flann\CMakeLists.txt;E:\project\opencv.git\modules\imgproc\CMakeLists.txt;E:\project\opencv.git\modules\ml\CMakeLists.txt;E:\project\opencv.git\modules\objdetect\CMakeLists.txt;E:\project\opencv.git\modules\photo\CMakeLists.txt;E:\project\opencv.git\modules\video\CMakeLists.txt;E:\project\opencv.git\modules\dnn\CMakeLists.txt;E:\project\opencv.git\modules\imgcodecs\CMakeLists.txt;E:\project\opencv.git\modules\shape\CMakeLists.txt;E:\project\opencv.git\modules\videoio\CMakeLists.txt;E:\project\opencv.git\modules\highgui\CMakeLists.txt;E:\project\opencv.git\modules\superres\CMakeLists.txt;E:\project\opencv.git\modules\features2d\CMakeLists.txt;E:\project\opencv.git\modules\calib3d\CMakeLists.txt;E:\project\opencv.git\modules\stitching\CMakeLists.txt;E:\project\opencv.git\modules\videostab\CMakeLists.txt;E:\project\opencv.git\cmake\templates\vs_version.rc.in;E:\project\opencv.git\modules\world\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\project\opencv.git\3.4.1_vs2015\modules\world\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\ZERO_CHECK.vcxproj">
+      <Project>{B931BE45-D37C-3530-8F99-8400CC6E45F7}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_perf_calib3d.vcxproj">
+      <Project>{415C1D5D-BAD3-33A4-B218-6DD7EC9775C0}</Project>
+      <Name>opencv_perf_calib3d</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_perf_core.vcxproj">
+      <Project>{E0847B38-1131-39C9-B964-2EDDD436719E}</Project>
+      <Name>opencv_perf_core</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_perf_dnn.vcxproj">
+      <Project>{07BF3D15-57F1-3569-8622-45BA91DE8123}</Project>
+      <Name>opencv_perf_dnn</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_perf_features2d.vcxproj">
+      <Project>{148B0FCB-88A2-3982-BE87-6C370E2467DE}</Project>
+      <Name>opencv_perf_features2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_perf_imgcodecs.vcxproj">
+      <Project>{0DB3CABE-C177-30AA-8489-263E984AA04C}</Project>
+      <Name>opencv_perf_imgcodecs</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_perf_imgproc.vcxproj">
+      <Project>{49A9B532-59DB-3AFB-9168-06A4D194389B}</Project>
+      <Name>opencv_perf_imgproc</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_perf_objdetect.vcxproj">
+      <Project>{1AB93597-B268-3E9B-B3D1-A793DFB15B7C}</Project>
+      <Name>opencv_perf_objdetect</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_perf_photo.vcxproj">
+      <Project>{D5B34A1B-6117-3CA2-8B2A-5F1F3A9D8409}</Project>
+      <Name>opencv_perf_photo</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_perf_stitching.vcxproj">
+      <Project>{3838FA38-416B-33CF-972C-B98054F67336}</Project>
+      <Name>opencv_perf_stitching</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_perf_superres.vcxproj">
+      <Project>{426B8A1B-1F26-369D-8B4F-DB53FA756B6F}</Project>
+      <Name>opencv_perf_superres</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_perf_video.vcxproj">
+      <Project>{6F75A5D4-6DDD-316A-8F21-61D78A2D96B7}</Project>
+      <Name>opencv_perf_video</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_perf_videoio.vcxproj">
+      <Project>{29E15EA4-4903-3412-ABCE-E3A701C5BEBF}</Project>
+      <Name>opencv_perf_videoio</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_test_calib3d.vcxproj">
+      <Project>{86DC3DC1-5D43-3C8C-9E43-F0934C09995C}</Project>
+      <Name>opencv_test_calib3d</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_test_core.vcxproj">
+      <Project>{76EAD6C0-EB17-3760-8731-3530A7FFC887}</Project>
+      <Name>opencv_test_core</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_test_core_FP16.vcxproj">
+      <Project>{CE2D2B98-934B-375B-9D95-A7419934CE7B}</Project>
+      <Name>opencv_test_core_FP16</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_test_dnn.vcxproj">
+      <Project>{D819C2FF-31EF-3D8F-85E5-5CBC2DE81B85}</Project>
+      <Name>opencv_test_dnn</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_test_features2d.vcxproj">
+      <Project>{4CC2E523-A6E3-3E76-BF5E-3A356020028B}</Project>
+      <Name>opencv_test_features2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_test_flann.vcxproj">
+      <Project>{14C44FCD-E9BB-3A28-A2CD-6914B00A2A1E}</Project>
+      <Name>opencv_test_flann</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_test_highgui.vcxproj">
+      <Project>{6C34A670-9064-326D-935D-E4187921F603}</Project>
+      <Name>opencv_test_highgui</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_test_imgcodecs.vcxproj">
+      <Project>{53E4E1C1-A869-3B9F-B9F0-12616E5383CD}</Project>
+      <Name>opencv_test_imgcodecs</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_test_imgproc.vcxproj">
+      <Project>{CEE0E403-326D-30B6-9E63-F0F39A97F865}</Project>
+      <Name>opencv_test_imgproc</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_test_ml.vcxproj">
+      <Project>{F2428716-F3C2-3843-A484-A5A16389219C}</Project>
+      <Name>opencv_test_ml</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_test_objdetect.vcxproj">
+      <Project>{26DC6CF4-CFAD-39A7-BED0-67DD42EA548B}</Project>
+      <Name>opencv_test_objdetect</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_test_photo.vcxproj">
+      <Project>{2DAFBFDD-1419-36C3-8DC2-98BAD16AE2E2}</Project>
+      <Name>opencv_test_photo</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_test_shape.vcxproj">
+      <Project>{6C82FF10-A87D-365C-B8CF-AB14DE6A09C2}</Project>
+      <Name>opencv_test_shape</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_test_stitching.vcxproj">
+      <Project>{79454261-DFFF-32CE-A7F8-B7DBE084136D}</Project>
+      <Name>opencv_test_stitching</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_test_superres.vcxproj">
+      <Project>{D99CFB87-3FF6-3F9B-B2FB-D70EC0855695}</Project>
+      <Name>opencv_test_superres</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_test_video.vcxproj">
+      <Project>{09B017B9-0A7E-3762-ABA7-80F0FC5703D2}</Project>
+      <Name>opencv_test_video</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_test_videoio.vcxproj">
+      <Project>{2079C875-EB99-366A-952A-07E00CE6C0E1}</Project>
+      <Name>opencv_test_videoio</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_test_videostab.vcxproj">
+      <Project>{A532A956-A309-3604-9A34-202A16D07561}</Project>
+      <Name>opencv_test_videostab</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_world.vcxproj">
+      <Project>{25A49DF7-CF88-36E0-925D-DDDEF8FFC76D}</Project>
+      <Name>opencv_world</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_world_AVX.vcxproj">
+      <Project>{1278C027-FC61-3E94-B75F-EE7042D093F8}</Project>
+      <Name>opencv_world_AVX</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_world_AVX2.vcxproj">
+      <Project>{1FB09CD2-0F33-3ED9-8F39-AC10DC15B052}</Project>
+      <Name>opencv_world_AVX2</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_world_FP16.vcxproj">
+      <Project>{B67ABBD6-31E8-365F-8D43-9F37494EB0D0}</Project>
+      <Name>opencv_world_FP16</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_world_SSE4_1.vcxproj">
+      <Project>{5DC23801-AC6D-3B07-A8FC-D84ABDB3FA52}</Project>
+      <Name>opencv_world_SSE4_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\opencv_world_SSE4_2.vcxproj">
+      <Project>{107AF265-3CFE-3FC5-8DDF-7FFB9645C835}</Project>
+      <Name>opencv_world_SSE4_2</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

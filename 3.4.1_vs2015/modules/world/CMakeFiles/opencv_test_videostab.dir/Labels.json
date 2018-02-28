@@ -1,0 +1,30 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "E:/project/opencv.git/modules/videostab/test/test_main.cpp",
+			"labels" : [ "Main", "opencv_videostab", "AccuracyTest" ]
+		},
+		
+		{
+			"file" : "E:/project/opencv.git/modules/videostab/test/test_motion_estimation.cpp",
+			"labels" : [ "Main", "opencv_videostab", "AccuracyTest" ]
+		},
+		
+		{
+			"file" : "E:/project/opencv.git/modules/videostab/test/test_precomp.hpp",
+			"labels" : [ "Main", "opencv_videostab", "AccuracyTest" ]
+		},
+		
+		{
+			"file" : "E:/project/opencv.git/modules/world/CMakeLists.txt"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "Main", "opencv_videostab", "AccuracyTest" ],
+		"name" : "opencv_test_videostab"
+	}
+}

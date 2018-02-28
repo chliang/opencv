@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\project\opencv.git\modules\core\src\convert.avx2.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\mathfuncs_core.avx2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\stat.avx2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\imgproc\src\filter.avx2.cpp">
+      <Filter>opencv_imgproc\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\imgproc\src\imgwarp.avx2.cpp">
+      <Filter>opencv_imgproc\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\imgproc\src\resize.avx2.cpp">
+      <Filter>opencv_imgproc\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\imgproc\src\undistort.avx2.cpp">
+      <Filter>opencv_imgproc\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\3.4.1_vs2015\modules\world\layers\layers_common.avx2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\features2d\src\fast.avx2.cpp">
+      <Filter>opencv_features2d\Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\project\opencv.git\modules\world\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="opencv_features2d\Src">
+      <UniqueIdentifier>{4D0B96E0-37CD-30B8-994F-B61839A37D41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_imgproc\Src">
+      <UniqueIdentifier>{65B42C08-BD6F-3C87-94E3-31FCC5CDBA97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_core\Src">
+      <UniqueIdentifier>{EC9C1663-CF03-3C8C-83CF-1D8ECF1FF084}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0F7E8307-8EC7-3052-A6B6-9348C8CE8F55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_core">
+      <UniqueIdentifier>{478401FC-4C5E-33F8-9E83-4DCA936C1ECC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_imgproc">
+      <UniqueIdentifier>{5E98CB13-2410-3559-9E2F-77C8A3AB6A4D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_features2d">
+      <UniqueIdentifier>{FF5F901F-37BB-3F15-A43A-AD18A12CA911}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

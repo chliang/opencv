@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1FF54A2F-E79C-3E51-97A9-AFD1098273C4}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>opencv_samples_tapi</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\project\opencv.git\modules\core\include;E:\project\opencv.git\modules\features2d\include;E:\project\opencv.git\modules\highgui\include;E:\project\opencv.git\modules\videoio\include;E:\project\opencv.git\modules\imgcodecs\include;E:\project\opencv.git\modules\imgproc\include;E:\project\opencv.git\modules\flann\include;E:\project\opencv.git\modules\calib3d\include;E:\project\opencv.git\modules\objdetect\include;E:\project\opencv.git\modules\video\include;E:\project\opencv.git\3.4.1_vs2015\3rdparty\ippicv\ippicv_win\include;E:\project\opencv.git\3.4.1_vs2015\3rdparty\ippicv\ippiw_win\include;E:\project\opencv.git\3.4.1_vs2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\project\opencv.git\modules\core\include;E:\project\opencv.git\modules\features2d\include;E:\project\opencv.git\modules\highgui\include;E:\project\opencv.git\modules\videoio\include;E:\project\opencv.git\modules\imgcodecs\include;E:\project\opencv.git\modules\imgproc\include;E:\project\opencv.git\modules\flann\include;E:\project\opencv.git\modules\calib3d\include;E:\project\opencv.git\modules\objdetect\include;E:\project\opencv.git\modules\video\include;E:\project\opencv.git\3.4.1_vs2015\3rdparty\ippicv\ippicv_win\include;E:\project\opencv.git\3.4.1_vs2015\3rdparty\ippicv\ippiw_win\include;E:\project\opencv.git\3.4.1_vs2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\project\opencv.git\samples\tapi\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/project/opencv.git/samples/tapi/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\cmake-3.9.0-win64-x64\bin\cmake.exe" -HE:/project/opencv.git -BE:/project/opencv.git/3.4.1_vs2015 --check-stamp-file E:/project/opencv.git/3.4.1_vs2015/samples/tapi/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/project/opencv.git/samples/tapi/CMakeLists.txt;E:\project\opencv.git\samples\tapi\CMakeLists.txt;E:\project\opencv.git\samples\tapi\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\project\opencv.git\3.4.1_vs2015\samples\tapi\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/project/opencv.git/samples/tapi/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\cmake-3.9.0-win64-x64\bin\cmake.exe" -HE:/project/opencv.git -BE:/project/opencv.git/3.4.1_vs2015 --check-stamp-file E:/project/opencv.git/3.4.1_vs2015/samples/tapi/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/project/opencv.git/samples/tapi/CMakeLists.txt;E:\project\opencv.git\samples\tapi\CMakeLists.txt;E:\project\opencv.git\samples\tapi\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\project\opencv.git\3.4.1_vs2015\samples\tapi\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\ZERO_CHECK.vcxproj">
+      <Project>{B931BE45-D37C-3530-8F99-8400CC6E45F7}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\tapi\example_tapi_bgfg_segm.vcxproj">
+      <Project>{117981D9-CAC1-3134-89CF-93C6117C3B25}</Project>
+      <Name>example_tapi_bgfg_segm</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\tapi\example_tapi_camshift.vcxproj">
+      <Project>{64CE3875-A40A-3776-B176-8A9224251077}</Project>
+      <Name>example_tapi_camshift</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\tapi\example_tapi_clahe.vcxproj">
+      <Project>{92ADC8EA-50F8-39AA-93FC-DB62495DF70D}</Project>
+      <Name>example_tapi_clahe</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\tapi\example_tapi_hog.vcxproj">
+      <Project>{9955E72C-0714-3508-A4AB-8E270713A58E}</Project>
+      <Name>example_tapi_hog</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\tapi\example_tapi_opencl_custom_kernel.vcxproj">
+      <Project>{53A41562-D0E7-3EB8-9150-D189319FC674}</Project>
+      <Name>example_tapi_opencl_custom_kernel</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\tapi\example_tapi_pyrlk_optical_flow.vcxproj">
+      <Project>{33BEF01F-F95F-315E-9AB8-A0313E80FA73}</Project>
+      <Name>example_tapi_pyrlk_optical_flow</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\tapi\example_tapi_squares.vcxproj">
+      <Project>{ED42EA33-65DD-3C4C-BB89-40B2F503F4CF}</Project>
+      <Name>example_tapi_squares</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\tapi\example_tapi_tvl1_optical_flow.vcxproj">
+      <Project>{3AB3E549-9932-300B-B98D-13DB08627A47}</Project>
+      <Name>example_tapi_tvl1_optical_flow</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\tapi\example_tapi_ufacedetect.vcxproj">
+      <Project>{01C85C63-3D7C-35FD-8D9F-8B3660CF677B}</Project>
+      <Name>example_tapi_ufacedetect</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

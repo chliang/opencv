@@ -1,0 +1,45 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "E:/project/opencv.git/modules/dnn/perf/opencl/perf_convolution.cpp",
+			"labels" : [ "Main", "opencv_dnn", "PerfTest" ]
+		},
+		
+		{
+			"file" : "E:/project/opencv.git/modules/dnn/perf/perf_caffe.cpp",
+			"labels" : [ "Main", "opencv_dnn", "PerfTest" ]
+		},
+		
+		{
+			"file" : "E:/project/opencv.git/modules/dnn/perf/perf_convolution.cpp",
+			"labels" : [ "Main", "opencv_dnn", "PerfTest" ]
+		},
+		
+		{
+			"file" : "E:/project/opencv.git/modules/dnn/perf/perf_main.cpp",
+			"labels" : [ "Main", "opencv_dnn", "PerfTest" ]
+		},
+		
+		{
+			"file" : "E:/project/opencv.git/modules/dnn/perf/perf_net.cpp",
+			"labels" : [ "Main", "opencv_dnn", "PerfTest" ]
+		},
+		
+		{
+			"file" : "E:/project/opencv.git/modules/dnn/perf/perf_precomp.hpp",
+			"labels" : [ "Main", "opencv_dnn", "PerfTest" ]
+		},
+		
+		{
+			"file" : "E:/project/opencv.git/modules/world/CMakeLists.txt"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "Main", "opencv_dnn", "PerfTest" ],
+		"name" : "opencv_perf_dnn"
+	}
+}

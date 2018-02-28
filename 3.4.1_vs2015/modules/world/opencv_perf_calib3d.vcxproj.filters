@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\project\opencv.git\modules\calib3d\perf\opencl\perf_stereobm.cpp">
+      <Filter>opencv_calib3d\Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\calib3d\perf\perf_affine2d.cpp">
+      <Filter>opencv_calib3d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\calib3d\perf\perf_cicrlesGrid.cpp">
+      <Filter>opencv_calib3d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\calib3d\perf\perf_main.cpp">
+      <Filter>opencv_calib3d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\calib3d\perf\perf_pnp.cpp">
+      <Filter>opencv_calib3d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\calib3d\perf\perf_stereosgbm.cpp">
+      <Filter>opencv_calib3d\Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\project\opencv.git\modules\calib3d\perf\perf_precomp.hpp">
+      <Filter>opencv_calib3d\Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\project\opencv.git\modules\world\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="opencv_calib3d\Src">
+      <UniqueIdentifier>{AB8986B3-D6FA-3875-A2E6-FFDA4B6402B3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_calib3d\Include">
+      <UniqueIdentifier>{A93A2451-58E0-3B80-91F0-7E2EE71023C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_calib3d\Src\opencl">
+      <UniqueIdentifier>{4DEC752B-15DB-3768-B561-4EC01C05DD09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_calib3d">
+      <UniqueIdentifier>{4DEA18AF-66F5-32EF-9E62-27EA81B4EF20}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\project\opencv.git\modules\dnn\perf\opencl\perf_convolution.cpp">
+      <Filter>opencv_dnn\Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\dnn\perf\perf_caffe.cpp">
+      <Filter>opencv_dnn\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\dnn\perf\perf_convolution.cpp">
+      <Filter>opencv_dnn\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\dnn\perf\perf_main.cpp">
+      <Filter>opencv_dnn\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\dnn\perf\perf_net.cpp">
+      <Filter>opencv_dnn\Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\project\opencv.git\modules\dnn\perf\perf_precomp.hpp">
+      <Filter>opencv_dnn\Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\project\opencv.git\modules\world\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="opencv_dnn\Src">
+      <UniqueIdentifier>{60D97829-AD57-350D-9410-9BD5E4F45F20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_dnn\Include">
+      <UniqueIdentifier>{58C86A87-78D0-3405-9D09-CB6F79A6726D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_dnn">
+      <UniqueIdentifier>{3763ED1E-10FC-3F8B-9DAF-E6266E5BBCFB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_dnn\Src\opencl">
+      <UniqueIdentifier>{26CEACF6-9E49-3694-9FB6-401309FD5B13}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{78A6568D-2C6B-3792-865C-D0545DAC7C78}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>opencv_samples_cpp</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\project\opencv.git\modules\videostab\include;E:\project\opencv.git\modules\stitching\include;E:\project\opencv.git\modules\calib3d\include;E:\project\opencv.git\modules\features2d\include;E:\project\opencv.git\modules\superres\include;E:\project\opencv.git\modules\highgui\include;E:\project\opencv.git\modules\videoio\include;E:\project\opencv.git\modules\shape\include;E:\project\opencv.git\modules\imgcodecs\include;E:\project\opencv.git\modules\dnn\include;E:\project\opencv.git\modules\video\include;E:\project\opencv.git\modules\photo\include;E:\project\opencv.git\modules\objdetect\include;E:\project\opencv.git\modules\ml\include;E:\project\opencv.git\modules\imgproc\include;E:\project\opencv.git\modules\flann\include;E:\project\opencv.git\modules\core\include;E:\project\opencv.git\modules\world\include;E:\project\opencv.git\3.4.1_vs2015\3rdparty\ippicv\ippicv_win\include;E:\project\opencv.git\3.4.1_vs2015\3rdparty\ippicv\ippiw_win\include;E:\project\opencv.git\3.4.1_vs2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\project\opencv.git\modules\videostab\include;E:\project\opencv.git\modules\stitching\include;E:\project\opencv.git\modules\calib3d\include;E:\project\opencv.git\modules\features2d\include;E:\project\opencv.git\modules\superres\include;E:\project\opencv.git\modules\highgui\include;E:\project\opencv.git\modules\videoio\include;E:\project\opencv.git\modules\shape\include;E:\project\opencv.git\modules\imgcodecs\include;E:\project\opencv.git\modules\dnn\include;E:\project\opencv.git\modules\video\include;E:\project\opencv.git\modules\photo\include;E:\project\opencv.git\modules\objdetect\include;E:\project\opencv.git\modules\ml\include;E:\project\opencv.git\modules\imgproc\include;E:\project\opencv.git\modules\flann\include;E:\project\opencv.git\modules\core\include;E:\project\opencv.git\modules\world\include;E:\project\opencv.git\3.4.1_vs2015\3rdparty\ippicv\ippicv_win\include;E:\project\opencv.git\3.4.1_vs2015\3rdparty\ippicv\ippiw_win\include;E:\project\opencv.git\3.4.1_vs2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\project\opencv.git\samples\cpp\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/project/opencv.git/samples/cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\cmake-3.9.0-win64-x64\bin\cmake.exe" -HE:/project/opencv.git -BE:/project/opencv.git/3.4.1_vs2015 --check-stamp-file E:/project/opencv.git/3.4.1_vs2015/samples/cpp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/project/opencv.git/samples/cpp/CMakeLists.txt;E:\project\opencv.git\samples\cpp\CMakeLists.txt;E:\project\opencv.git\samples\cpp\tutorial_code\calib3d\real_time_pose_estimation\CMakeLists.txt;E:\project\opencv.git\samples\cpp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\project\opencv.git\3.4.1_vs2015\samples\cpp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/project/opencv.git/samples/cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\cmake-3.9.0-win64-x64\bin\cmake.exe" -HE:/project/opencv.git -BE:/project/opencv.git/3.4.1_vs2015 --check-stamp-file E:/project/opencv.git/3.4.1_vs2015/samples/cpp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/project/opencv.git/samples/cpp/CMakeLists.txt;E:\project\opencv.git\samples\cpp\CMakeLists.txt;E:\project\opencv.git\samples\cpp\tutorial_code\calib3d\real_time_pose_estimation\CMakeLists.txt;E:\project\opencv.git\samples\cpp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\project\opencv.git\3.4.1_vs2015\samples\cpp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\ZERO_CHECK.vcxproj">
+      <Project>{B931BE45-D37C-3530-8F99-8400CC6E45F7}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_3calibration.vcxproj">
+      <Project>{BA3D158F-EC26-3E11-956C-1BB03F83BAC2}</Project>
+      <Name>example_cpp_3calibration</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_application_trace.vcxproj">
+      <Project>{36631979-8AB4-3B5E-A4B8-B18E653CB2B2}</Project>
+      <Name>example_cpp_application_trace</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_autofocus.vcxproj">
+      <Project>{472F8FBE-DB95-345E-90EB-E2F6959E1745}</Project>
+      <Name>example_cpp_autofocus</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_bgfg_segm.vcxproj">
+      <Project>{1A4CD4FA-DEAC-3E77-B1A9-39A04E9E6904}</Project>
+      <Name>example_cpp_bgfg_segm</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_calibration.vcxproj">
+      <Project>{30C107A4-D39A-37D7-BAAE-3F2D559B417C}</Project>
+      <Name>example_cpp_calibration</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_camshiftdemo.vcxproj">
+      <Project>{D52636A9-0A26-3F82-B9D8-720BF201C628}</Project>
+      <Name>example_cpp_camshiftdemo</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_cloning_demo.vcxproj">
+      <Project>{D962842D-DAFB-3BA8-AE25-2A0FAF6DCE6D}</Project>
+      <Name>example_cpp_cloning_demo</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_cloning_gui.vcxproj">
+      <Project>{AA825BE5-96B4-3636-9CCD-9D456A49ADD3}</Project>
+      <Name>example_cpp_cloning_gui</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_connected_components.vcxproj">
+      <Project>{AB091385-99CD-3BD6-8044-31AEC9906546}</Project>
+      <Name>example_cpp_connected_components</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_contours2.vcxproj">
+      <Project>{6022595D-B650-3B70-9F51-EF16F4B80F5B}</Project>
+      <Name>example_cpp_contours2</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_convexhull.vcxproj">
+      <Project>{40287C50-AC29-3665-9CE4-BDB116903591}</Project>
+      <Name>example_cpp_convexhull</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_cout_mat.vcxproj">
+      <Project>{554C12DF-B990-3BEB-AF86-47FAE6A146AA}</Project>
+      <Name>example_cpp_cout_mat</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_create_mask.vcxproj">
+      <Project>{6442734C-AF8C-301D-921A-D3BC339D619B}</Project>
+      <Name>example_cpp_create_mask</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_dbt_face_detection.vcxproj">
+      <Project>{F1306B3D-3C67-304D-BBB4-80F1766565C7}</Project>
+      <Name>example_cpp_dbt_face_detection</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_delaunay2.vcxproj">
+      <Project>{071BC0DF-B55A-35B0-94CE-8F7DC72D9145}</Project>
+      <Name>example_cpp_delaunay2</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_demhist.vcxproj">
+      <Project>{A741D1A1-7F75-363A-B687-F8DE4B1661D1}</Project>
+      <Name>example_cpp_demhist</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_detect_blob.vcxproj">
+      <Project>{4F0F950B-982E-3201-A92F-2CB018C120C9}</Project>
+      <Name>example_cpp_detect_blob</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_detect_mser.vcxproj">
+      <Project>{C839D97D-E871-3AF0-97D9-2A6B26DB8164}</Project>
+      <Name>example_cpp_detect_mser</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_dft.vcxproj">
+      <Project>{1F0B12B0-054A-3C2D-B042-606316ABCFF8}</Project>
+      <Name>example_cpp_dft</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_distrans.vcxproj">
+      <Project>{FF4B00C5-9574-3894-9934-C14AA435E317}</Project>
+      <Name>example_cpp_distrans</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_drawing.vcxproj">
+      <Project>{3D469EE7-6191-3771-A1AF-8A60944E5EC0}</Project>
+      <Name>example_cpp_drawing</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_edge.vcxproj">
+      <Project>{F31E01C3-FA26-34E2-A850-ECD3547B5B47}</Project>
+      <Name>example_cpp_edge</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_em.vcxproj">
+      <Project>{97882899-55D1-379F-8C7E-AD9AF140649D}</Project>
+      <Name>example_cpp_em</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_example.vcxproj">
+      <Project>{54113E92-A4D1-3431-8988-04AA22E83D92}</Project>
+      <Name>example_cpp_example</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_facedetect.vcxproj">
+      <Project>{D0994701-7472-3104-8085-676A7FB54F61}</Project>
+      <Name>example_cpp_facedetect</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_facial_features.vcxproj">
+      <Project>{2A245855-77EA-33F3-AA86-7B847E76FF39}</Project>
+      <Name>example_cpp_facial_features</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_falsecolor.vcxproj">
+      <Project>{86116E46-17C9-3F13-86AC-5B98AF11C7B4}</Project>
+      <Name>example_cpp_falsecolor</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_fback.vcxproj">
+      <Project>{1C4F9ECF-93A2-327D-9E33-0E3226EC4966}</Project>
+      <Name>example_cpp_fback</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_ffilldemo.vcxproj">
+      <Project>{D0523AA0-D220-39F9-BC87-26B89313796E}</Project>
+      <Name>example_cpp_ffilldemo</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_filestorage.vcxproj">
+      <Project>{250D9219-4336-381E-96A1-BAF717D12F1A}</Project>
+      <Name>example_cpp_filestorage</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_filestorage_base64.vcxproj">
+      <Project>{09DB18C8-5AEF-3383-B676-B335C5D68E84}</Project>
+      <Name>example_cpp_filestorage_base64</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_fitellipse.vcxproj">
+      <Project>{F1AFB3DD-8610-396A-BBB3-C362E544F481}</Project>
+      <Name>example_cpp_fitellipse</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_grabcut.vcxproj">
+      <Project>{3A00CF78-2835-3A3D-ADCC-39092BC05758}</Project>
+      <Name>example_cpp_grabcut</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_image.vcxproj">
+      <Project>{29842A86-F7D3-390C-9462-4A49BBDB67E8}</Project>
+      <Name>example_cpp_image</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_image_alignment.vcxproj">
+      <Project>{BD018199-8C17-3485-81EF-114B3A560056}</Project>
+      <Name>example_cpp_image_alignment</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_image_sequence.vcxproj">
+      <Project>{C48762BB-D0F9-3AD7-8D88-F0DECBED8221}</Project>
+      <Name>example_cpp_image_sequence</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_imagelist_creator.vcxproj">
+      <Project>{DE989258-1D01-3D6F-A9CD-E12213B5FBD6}</Project>
+      <Name>example_cpp_imagelist_creator</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_inpaint.vcxproj">
+      <Project>{6909F7D3-F285-3C4E-BAEC-968085E238FF}</Project>
+      <Name>example_cpp_inpaint</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_intelperc_capture.vcxproj">
+      <Project>{E6598664-920F-395E-99E1-24F7C40109CB}</Project>
+      <Name>example_cpp_intelperc_capture</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_kalman.vcxproj">
+      <Project>{9F94BF02-7AAB-390D-9D07-A2ADEEB0E0F7}</Project>
+      <Name>example_cpp_kalman</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_kmeans.vcxproj">
+      <Project>{A5FAED56-B0C6-3E13-B3AC-1ACE0F724411}</Project>
+      <Name>example_cpp_kmeans</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_laplace.vcxproj">
+      <Project>{9953E90F-227F-3398-B1E3-D220852E3B6A}</Project>
+      <Name>example_cpp_laplace</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_letter_recog.vcxproj">
+      <Project>{89317E8A-D8D3-3898-AE14-0FF3DEC3389E}</Project>
+      <Name>example_cpp_letter_recog</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_lkdemo.vcxproj">
+      <Project>{5B2E583B-6B35-32B6-AD14-15861AB720D4}</Project>
+      <Name>example_cpp_lkdemo</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_logistic_regression.vcxproj">
+      <Project>{5C34352C-2E3A-3843-8AE0-75E6C12C175C}</Project>
+      <Name>example_cpp_logistic_regression</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_lsd_lines.vcxproj">
+      <Project>{B3D0CEC9-FDB8-34F1-8B23-2345DCBEDC6F}</Project>
+      <Name>example_cpp_lsd_lines</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_mask_tmpl.vcxproj">
+      <Project>{4953078A-FE76-328D-BF51-4C94B81929E3}</Project>
+      <Name>example_cpp_mask_tmpl</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_matchmethod_orb_akaze_brisk.vcxproj">
+      <Project>{463366EC-BF70-3506-9EB7-17D1C515E25C}</Project>
+      <Name>example_cpp_matchmethod_orb_akaze_brisk</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_minarea.vcxproj">
+      <Project>{330D5F19-C6BD-3345-A8E0-F2D810BCD01D}</Project>
+      <Name>example_cpp_minarea</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_morphology2.vcxproj">
+      <Project>{4C798D85-0411-31D9-BBF4-49C5D7291050}</Project>
+      <Name>example_cpp_morphology2</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_neural_network.vcxproj">
+      <Project>{D5451490-723B-35CC-9C4F-7BD64326A50E}</Project>
+      <Name>example_cpp_neural_network</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_npr_demo.vcxproj">
+      <Project>{115385F8-D986-3E58-BD92-2008D0DCAFA3}</Project>
+      <Name>example_cpp_npr_demo</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_opencv_version.vcxproj">
+      <Project>{C58B282B-0EE7-3C27-83F6-240D29F69537}</Project>
+      <Name>example_cpp_opencv_version</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_openni_capture.vcxproj">
+      <Project>{9A20F726-6A83-3152-800E-04DE86E7308B}</Project>
+      <Name>example_cpp_openni_capture</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_pca.vcxproj">
+      <Project>{24F250CC-0796-314D-821A-17306E414F79}</Project>
+      <Name>example_cpp_pca</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_peopledetect.vcxproj">
+      <Project>{7A140313-63AB-39DB-A08B-21507379A03E}</Project>
+      <Name>example_cpp_peopledetect</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_phase_corr.vcxproj">
+      <Project>{A704BF1E-D2A6-3904-A118-FA818263152B}</Project>
+      <Name>example_cpp_phase_corr</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_points_classifier.vcxproj">
+      <Project>{E8A0FDC8-4280-3564-80B7-E6B1B925BC16}</Project>
+      <Name>example_cpp_points_classifier</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_polar_transforms.vcxproj">
+      <Project>{1CEE5B00-11EC-3242-A6BA-C628169F49AC}</Project>
+      <Name>example_cpp_polar_transforms</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_segment_objects.vcxproj">
+      <Project>{9167730D-A684-34D1-8CEB-DEA88643E779}</Project>
+      <Name>example_cpp_segment_objects</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_select3dobj.vcxproj">
+      <Project>{826A05E5-4518-39D8-9ED6-35580968D642}</Project>
+      <Name>example_cpp_select3dobj</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_shape_example.vcxproj">
+      <Project>{792FB9D9-4315-37CD-BCA2-9B8C6D5BBC35}</Project>
+      <Name>example_cpp_shape_example</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_smiledetect.vcxproj">
+      <Project>{063081F7-F14F-3E00-A1B4-F3AE09EF751B}</Project>
+      <Name>example_cpp_smiledetect</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_squares.vcxproj">
+      <Project>{A7848B63-8C15-30BA-A20F-C10818B5675C}</Project>
+      <Name>example_cpp_squares</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_starter_imagelist.vcxproj">
+      <Project>{B5D8319E-35D4-3C7A-83FC-AD9E9536788E}</Project>
+      <Name>example_cpp_starter_imagelist</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_stereo_calib.vcxproj">
+      <Project>{C82A68FA-FCAB-33AF-A09D-8063CEA6930A}</Project>
+      <Name>example_cpp_stereo_calib</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_stereo_match.vcxproj">
+      <Project>{D41F5585-11C4-30AF-8CB3-2B1909ACACC7}</Project>
+      <Name>example_cpp_stereo_match</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_stitching.vcxproj">
+      <Project>{98088960-B6A8-323D-8B51-30FBC316D57C}</Project>
+      <Name>example_cpp_stitching</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_stitching_detailed.vcxproj">
+      <Project>{1A223455-860B-3903-B299-02416920BA17}</Project>
+      <Name>example_cpp_stitching_detailed</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_train_HOG.vcxproj">
+      <Project>{49A86D6E-9DFC-3672-8920-7BAE9337D908}</Project>
+      <Name>example_cpp_train_HOG</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_train_svmsgd.vcxproj">
+      <Project>{B5AC6A2C-7D9B-354F-A26A-C67013C08E49}</Project>
+      <Name>example_cpp_train_svmsgd</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_travelsalesman.vcxproj">
+      <Project>{A1378578-7702-3273-BF28-080770C1D359}</Project>
+      <Name>example_cpp_travelsalesman</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_tree_engine.vcxproj">
+      <Project>{7692B4F1-9CF4-3949-B5DB-30491C6B8053}</Project>
+      <Name>example_cpp_tree_engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_tvl1_optical_flow.vcxproj">
+      <Project>{26EB73AB-C56F-3AA9-AB7A-8BAB5C76F65E}</Project>
+      <Name>example_cpp_tvl1_optical_flow</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_videocapture_basic.vcxproj">
+      <Project>{F7E2A66A-637C-3AFC-BEF1-E48671A12083}</Project>
+      <Name>example_cpp_videocapture_basic</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_videocapture_starter.vcxproj">
+      <Project>{44723DF0-EA91-3D04-B1A0-E553793A7ABC}</Project>
+      <Name>example_cpp_videocapture_starter</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_videostab.vcxproj">
+      <Project>{EAF8F710-FB48-36A9-990D-CDC8C3870289}</Project>
+      <Name>example_cpp_videostab</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_videowriter_basic.vcxproj">
+      <Project>{E25FB67D-CCB1-3B33-BCDA-BAC7E74927E8}</Project>
+      <Name>example_cpp_videowriter_basic</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_warpPerspective_demo.vcxproj">
+      <Project>{1E11C4AB-9B8E-3E1C-8880-2412A3221CED}</Project>
+      <Name>example_cpp_warpPerspective_demo</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\cpp\example_cpp_watershed.vcxproj">
+      <Project>{32FEF445-52B8-3267-85FC-0917C2B00FFE}</Project>
+      <Name>example_cpp_watershed</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

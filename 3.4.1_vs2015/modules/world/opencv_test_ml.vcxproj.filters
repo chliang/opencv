@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\project\opencv.git\modules\ml\test\test_emknearestkmeans.cpp">
+      <Filter>opencv_ml\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\ml\test\test_gbttest.cpp">
+      <Filter>opencv_ml\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\ml\test\test_lr.cpp">
+      <Filter>opencv_ml\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\ml\test\test_main.cpp">
+      <Filter>opencv_ml\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\ml\test\test_mltests.cpp">
+      <Filter>opencv_ml\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\ml\test\test_mltests2.cpp">
+      <Filter>opencv_ml\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\ml\test\test_save_load.cpp">
+      <Filter>opencv_ml\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\ml\test\test_svmsgd.cpp">
+      <Filter>opencv_ml\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\ml\test\test_svmtrainauto.cpp">
+      <Filter>opencv_ml\Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\project\opencv.git\modules\ml\test\test_precomp.hpp">
+      <Filter>opencv_ml\Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\project\opencv.git\modules\world\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="opencv_ml\Src">
+      <UniqueIdentifier>{D590410A-EEDD-30C5-95CD-BDD4AA2EC6B2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_ml\Include">
+      <UniqueIdentifier>{3C6CF4F4-9037-3455-98D3-AA9B5CFB1795}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_ml">
+      <UniqueIdentifier>{8C0AD848-6A09-3F93-B3B6-D3FAFCA7FED7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

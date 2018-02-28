@@ -1,0 +1,30 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "E:/project/opencv.git/modules/highgui/test/test_gui.cpp",
+			"labels" : [ "Main", "opencv_highgui", "AccuracyTest" ]
+		},
+		
+		{
+			"file" : "E:/project/opencv.git/modules/highgui/test/test_main.cpp",
+			"labels" : [ "Main", "opencv_highgui", "AccuracyTest" ]
+		},
+		
+		{
+			"file" : "E:/project/opencv.git/modules/highgui/test/test_precomp.hpp",
+			"labels" : [ "Main", "opencv_highgui", "AccuracyTest" ]
+		},
+		
+		{
+			"file" : "E:/project/opencv.git/modules/world/CMakeLists.txt"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "Main", "opencv_highgui", "AccuracyTest" ],
+		"name" : "opencv_test_highgui"
+	}
+}

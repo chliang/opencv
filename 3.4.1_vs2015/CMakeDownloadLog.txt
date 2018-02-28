@@ -1,0 +1,8 @@
+use_cache "E:/project/opencv.git/.cache"
+#match_hash_in_cmake_cache "OCV_DOWNLOAD_FFMPEG_HASH_3rdparty_ffmpeg_opencv_ffmpeg_dll"
+#match_hash_in_cmake_cache "OCV_DOWNLOAD_FFMPEG_HASH_3rdparty_ffmpeg_opencv_ffmpeg_64_dll"
+#match_hash_in_cmake_cache "OCV_DOWNLOAD_FFMPEG_HASH_3rdparty_ffmpeg_ffmpeg_version_cmake"
+#match_hash_in_cmake_cache "OCV_DOWNLOAD_IPPICV_HASH_3rdparty_ippicv_ippicv_2017u3_win_intel64_general_20170822_zip"
+do_copy "res10_300x300_ssd_iter_140000.caffemodel" "afbb6037fd180e8d2acb3b58ca737b9e" "https://raw.githubusercontent.com/opencv/opencv_3rdparty/b2bfc75f6aea5b1f834ff0f0b865a7c18ff1459f/res10_300x300_ssd_iter_140000.caffemodel" "E:/project/opencv.git/samples/dnn/face_detector"
+#check_md5 "E:/project/opencv.git/samples/dnn/face_detector/res10_300x300_ssd_iter_140000.caffemodel"
+#match_md5 "E:/project/opencv.git/samples/dnn/face_detector/res10_300x300_ssd_iter_140000.caffemodel" "afbb6037fd180e8d2acb3b58ca737b9e"

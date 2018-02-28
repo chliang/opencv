@@ -1,0 +1,50 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "E:/project/opencv.git/modules/videoio/test/test_container_avi.cpp",
+			"labels" : [ "Main", "opencv_videoio", "AccuracyTest" ]
+		},
+		
+		{
+			"file" : "E:/project/opencv.git/modules/videoio/test/test_ffmpeg.cpp",
+			"labels" : [ "Main", "opencv_videoio", "AccuracyTest" ]
+		},
+		
+		{
+			"file" : "E:/project/opencv.git/modules/videoio/test/test_fourcc.cpp",
+			"labels" : [ "Main", "opencv_videoio", "AccuracyTest" ]
+		},
+		
+		{
+			"file" : "E:/project/opencv.git/modules/videoio/test/test_main.cpp",
+			"labels" : [ "Main", "opencv_videoio", "AccuracyTest" ]
+		},
+		
+		{
+			"file" : "E:/project/opencv.git/modules/videoio/test/test_mfx.cpp",
+			"labels" : [ "Main", "opencv_videoio", "AccuracyTest" ]
+		},
+		
+		{
+			"file" : "E:/project/opencv.git/modules/videoio/test/test_video_io.cpp",
+			"labels" : [ "Main", "opencv_videoio", "AccuracyTest" ]
+		},
+		
+		{
+			"file" : "E:/project/opencv.git/modules/videoio/test/test_precomp.hpp",
+			"labels" : [ "Main", "opencv_videoio", "AccuracyTest" ]
+		},
+		
+		{
+			"file" : "E:/project/opencv.git/modules/world/CMakeLists.txt"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "Main", "opencv_videoio", "AccuracyTest" ],
+		"name" : "opencv_test_videoio"
+	}
+}

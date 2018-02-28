@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9D995014-5F05-39BA-8049-A1A2E61430BD}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>opencv_samples_dnn</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\project\opencv.git\modules\videoio\include;E:\project\opencv.git\modules\imgcodecs\include;E:\project\opencv.git\modules\imgproc\include;E:\project\opencv.git\modules\core\include;E:\project\opencv.git\modules\highgui\include;E:\project\opencv.git\modules\dnn\include;E:\project\opencv.git\3.4.1_vs2015\3rdparty\ippicv\ippicv_win\include;E:\project\opencv.git\3.4.1_vs2015\3rdparty\ippicv\ippiw_win\include;E:\project\opencv.git\3.4.1_vs2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\project\opencv.git\modules\videoio\include;E:\project\opencv.git\modules\imgcodecs\include;E:\project\opencv.git\modules\imgproc\include;E:\project\opencv.git\modules\core\include;E:\project\opencv.git\modules\highgui\include;E:\project\opencv.git\modules\dnn\include;E:\project\opencv.git\3.4.1_vs2015\3rdparty\ippicv\ippicv_win\include;E:\project\opencv.git\3.4.1_vs2015\3rdparty\ippicv\ippiw_win\include;E:\project\opencv.git\3.4.1_vs2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\project\opencv.git\samples\dnn\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/project/opencv.git/samples/dnn/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\cmake-3.9.0-win64-x64\bin\cmake.exe" -HE:/project/opencv.git -BE:/project/opencv.git/3.4.1_vs2015 --check-stamp-file E:/project/opencv.git/3.4.1_vs2015/samples/dnn/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/project/opencv.git/samples/dnn/CMakeLists.txt;E:\project\opencv.git\samples\dnn\CMakeLists.txt;E:\project\opencv.git\samples\dnn\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\project\opencv.git\3.4.1_vs2015\samples\dnn\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/project/opencv.git/samples/dnn/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\cmake-3.9.0-win64-x64\bin\cmake.exe" -HE:/project/opencv.git -BE:/project/opencv.git/3.4.1_vs2015 --check-stamp-file E:/project/opencv.git/3.4.1_vs2015/samples/dnn/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/project/opencv.git/samples/dnn/CMakeLists.txt;E:\project\opencv.git\samples\dnn\CMakeLists.txt;E:\project\opencv.git\samples\dnn\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\project\opencv.git\3.4.1_vs2015\samples\dnn\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\ZERO_CHECK.vcxproj">
+      <Project>{B931BE45-D37C-3530-8F99-8400CC6E45F7}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\dnn\example_dnn_caffe_googlenet.vcxproj">
+      <Project>{0A73D091-FFBD-3298-AE7C-3074C07B0C85}</Project>
+      <Name>example_dnn_caffe_googlenet</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\dnn\example_dnn_colorization.vcxproj">
+      <Project>{E004B70B-0B15-3A4E-BCF1-138EAC76D111}</Project>
+      <Name>example_dnn_colorization</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\dnn\example_dnn_faster_rcnn.vcxproj">
+      <Project>{A176955D-C9E9-38BA-B3BB-2D1C61AF525C}</Project>
+      <Name>example_dnn_faster_rcnn</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\dnn\example_dnn_fcn_semsegm.vcxproj">
+      <Project>{FE38BBB9-46B0-3F45-93E4-5B6BE0BCB56D}</Project>
+      <Name>example_dnn_fcn_semsegm</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\dnn\example_dnn_resnet_ssd_face.vcxproj">
+      <Project>{9C952831-3B56-3492-A09A-5B796880C72D}</Project>
+      <Name>example_dnn_resnet_ssd_face</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\dnn\example_dnn_squeezenet_halide.vcxproj">
+      <Project>{E83108D8-164E-3101-B3D5-81390F030B62}</Project>
+      <Name>example_dnn_squeezenet_halide</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\dnn\example_dnn_ssd_mobilenet_object_detection.vcxproj">
+      <Project>{D7F0DCB6-921D-3E06-BB85-50ADF95F13F8}</Project>
+      <Name>example_dnn_ssd_mobilenet_object_detection</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\dnn\example_dnn_ssd_object_detection.vcxproj">
+      <Project>{06DAFE49-08BC-35B4-9988-9E61ADE7F3C1}</Project>
+      <Name>example_dnn_ssd_object_detection</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\dnn\example_dnn_tf_inception.vcxproj">
+      <Project>{3CF644CD-5B50-3DDE-942B-2FD514BB1123}</Project>
+      <Name>example_dnn_tf_inception</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\dnn\example_dnn_torch_enet.vcxproj">
+      <Project>{3D820BBF-8ABA-36EE-8607-1DC03C73FCAC}</Project>
+      <Name>example_dnn_torch_enet</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\project\opencv.git\3.4.1_vs2015\samples\dnn\example_dnn_yolo_object_detection.vcxproj">
+      <Project>{59A6A813-DFF4-3EC4-BE16-F2DB6D9EB8A8}</Project>
+      <Name>example_dnn_yolo_object_detection</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

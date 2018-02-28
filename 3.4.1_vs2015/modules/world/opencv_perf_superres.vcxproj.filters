@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\project\opencv.git\modules\superres\perf\perf_main.cpp">
+      <Filter>opencv_superres\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\superres\perf\perf_superres.cpp">
+      <Filter>opencv_superres\Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\project\opencv.git\modules\superres\perf\perf_precomp.hpp">
+      <Filter>opencv_superres\Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\project\opencv.git\modules\world\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="opencv_superres\Src">
+      <UniqueIdentifier>{D0AE9181-F6BD-3F3D-B276-D94CA4E1C784}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_superres\Include">
+      <UniqueIdentifier>{E7E87C06-AF5C-38A5-BF12-3DCD8BD5742F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_superres">
+      <UniqueIdentifier>{8FDB3E8A-D29A-3937-9D30-9D0A51B2292C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

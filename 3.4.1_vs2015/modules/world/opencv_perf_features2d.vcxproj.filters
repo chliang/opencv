@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\project\opencv.git\modules\features2d\perf\opencl\perf_brute_force_matcher.cpp">
+      <Filter>opencv_features2d\Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\features2d\perf\opencl\perf_feature2d.cpp">
+      <Filter>opencv_features2d\Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\features2d\perf\perf_batchDistance.cpp">
+      <Filter>opencv_features2d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\features2d\perf\perf_feature2d.cpp">
+      <Filter>opencv_features2d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\features2d\perf\perf_main.cpp">
+      <Filter>opencv_features2d\Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\project\opencv.git\modules\features2d\perf\perf_feature2d.hpp">
+      <Filter>opencv_features2d\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\project\opencv.git\modules\features2d\perf\perf_precomp.hpp">
+      <Filter>opencv_features2d\Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\project\opencv.git\modules\world\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="opencv_features2d\Src">
+      <UniqueIdentifier>{4D0B96E0-37CD-30B8-994F-B61839A37D41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_features2d\Include">
+      <UniqueIdentifier>{B59628EF-BA59-3B89-BF9E-7947CC06C6E8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_features2d\Src\opencl">
+      <UniqueIdentifier>{48096E1B-361C-36B9-9766-1113F70C94EA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_features2d">
+      <UniqueIdentifier>{FF5F901F-37BB-3F15-A43A-AD18A12CA911}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

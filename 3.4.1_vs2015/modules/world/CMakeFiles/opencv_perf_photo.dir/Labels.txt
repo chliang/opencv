@@ -1,0 +1,26 @@
+# Target labels
+ Main
+ opencv_photo
+ PerfTest
+# Source files and their labels
+E:/project/opencv.git/modules/photo/perf/opencl/perf_denoising.cpp
+ Main
+ opencv_photo
+ PerfTest
+E:/project/opencv.git/modules/photo/perf/perf_cuda.cpp
+ Main
+ opencv_photo
+ PerfTest
+E:/project/opencv.git/modules/photo/perf/perf_inpaint.cpp
+ Main
+ opencv_photo
+ PerfTest
+E:/project/opencv.git/modules/photo/perf/perf_main.cpp
+ Main
+ opencv_photo
+ PerfTest
+E:/project/opencv.git/modules/photo/perf/perf_precomp.hpp
+ Main
+ opencv_photo
+ PerfTest
+E:/project/opencv.git/modules/world/CMakeLists.txt

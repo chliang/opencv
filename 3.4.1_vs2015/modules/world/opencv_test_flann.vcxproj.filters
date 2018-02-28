@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\project\opencv.git\modules\flann\test\test_lshtable_badarg.cpp">
+      <Filter>opencv_flann\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\flann\test\test_main.cpp">
+      <Filter>opencv_flann\Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\project\opencv.git\modules\flann\test\test_precomp.hpp">
+      <Filter>opencv_flann\Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\project\opencv.git\modules\world\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="opencv_flann\Src">
+      <UniqueIdentifier>{1EF19139-CFB4-322E-BCB3-518022E52C91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_flann\Include">
+      <UniqueIdentifier>{05CF79F3-1AC5-3233-87BA-E57246C38DD2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_flann">
+      <UniqueIdentifier>{85EBE7FA-6F3F-3961-9741-C2AC1C138824}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

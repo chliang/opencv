@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\project\opencv.git\modules\imgcodecs\test\test_grfmt.cpp">
+      <Filter>opencv_imgcodecs\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\imgcodecs\test\test_jpeg.cpp">
+      <Filter>opencv_imgcodecs\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\imgcodecs\test\test_main.cpp">
+      <Filter>opencv_imgcodecs\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\imgcodecs\test\test_png.cpp">
+      <Filter>opencv_imgcodecs\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\imgcodecs\test\test_read_write.cpp">
+      <Filter>opencv_imgcodecs\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\imgcodecs\test\test_tiff.cpp">
+      <Filter>opencv_imgcodecs\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\imgcodecs\test\test_webp.cpp">
+      <Filter>opencv_imgcodecs\Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\project\opencv.git\modules\imgcodecs\test\test_precomp.hpp">
+      <Filter>opencv_imgcodecs\Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\project\opencv.git\modules\world\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="opencv_imgcodecs\Src">
+      <UniqueIdentifier>{A3E0318A-F99B-31DE-9ED4-2AD2EED5DC2D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_imgcodecs\Include">
+      <UniqueIdentifier>{19C9B716-DDB2-3668-BEE9-64E5AC3D2D30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_imgcodecs">
+      <UniqueIdentifier>{EA449F6B-33EA-3DB2-B12D-D005944053C7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

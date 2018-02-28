@@ -1,0 +1,25 @@
+
+{
+	"sources" : 
+	[
+		
+		{
+			"file" : "E:/project/opencv.git/modules/imgcodecs/perf/perf_main.cpp",
+			"labels" : [ "Main", "opencv_imgcodecs", "PerfTest" ]
+		},
+		
+		{
+			"file" : "E:/project/opencv.git/modules/imgcodecs/perf/perf_precomp.hpp",
+			"labels" : [ "Main", "opencv_imgcodecs", "PerfTest" ]
+		},
+		
+		{
+			"file" : "E:/project/opencv.git/modules/world/CMakeLists.txt"
+		}
+	],
+	"target" : 
+	{
+		"labels" : [ "Main", "opencv_imgcodecs", "PerfTest" ],
+		"name" : "opencv_perf_imgcodecs"
+	}
+}

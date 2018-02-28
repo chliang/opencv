@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\project\opencv.git\modules\stitching\perf\opencl\perf_stitch.cpp">
+      <Filter>opencv_stitching\Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\stitching\perf\opencl\perf_warpers.cpp">
+      <Filter>opencv_stitching\Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\stitching\perf\perf_estimators.cpp">
+      <Filter>opencv_stitching\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\stitching\perf\perf_main.cpp">
+      <Filter>opencv_stitching\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\stitching\perf\perf_matchers.cpp">
+      <Filter>opencv_stitching\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\stitching\perf\perf_stich.cpp">
+      <Filter>opencv_stitching\Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\project\opencv.git\modules\stitching\perf\perf_precomp.hpp">
+      <Filter>opencv_stitching\Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\project\opencv.git\modules\world\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="opencv_stitching\Src">
+      <UniqueIdentifier>{FF3F1441-0F9D-3BCE-9828-EE96EB3AFE19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_stitching\Include">
+      <UniqueIdentifier>{4F134CC2-5DB4-370C-A249-CBCB921843F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_stitching\Src\opencl">
+      <UniqueIdentifier>{1D225BCB-64D7-3ACA-ADAB-85E367197E76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_stitching">
+      <UniqueIdentifier>{B0A464C5-65C0-3EB7-B4A4-3F6821E36D6E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

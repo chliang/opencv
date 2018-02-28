@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\project\opencv.git\modules\core\perf\cuda\perf_gpumat.cpp">
+      <Filter>opencv_core\Src\cuda</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\core\perf\opencl\perf_arithm.cpp">
+      <Filter>opencv_core\Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\core\perf\opencl\perf_bufferpool.cpp">
+      <Filter>opencv_core\Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\core\perf\opencl\perf_channels.cpp">
+      <Filter>opencv_core\Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\core\perf\opencl\perf_dxt.cpp">
+      <Filter>opencv_core\Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\core\perf\opencl\perf_gemm.cpp">
+      <Filter>opencv_core\Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\core\perf\opencl\perf_matop.cpp">
+      <Filter>opencv_core\Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\core\perf\opencl\perf_usage_flags.cpp">
+      <Filter>opencv_core\Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\core\perf\perf_abs.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\core\perf\perf_addWeighted.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\core\perf\perf_arithm.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\core\perf\perf_bitwise.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\core\perf\perf_compare.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\core\perf\perf_convertTo.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\core\perf\perf_cvround.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\core\perf\perf_dft.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\core\perf\perf_dot.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\core\perf\perf_inRange.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\core\perf\perf_io_base64.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\core\perf\perf_lut.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\core\perf\perf_main.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\core\perf\perf_mat.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\core\perf\perf_math.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\core\perf\perf_merge.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\core\perf\perf_minmaxloc.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\core\perf\perf_norm.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\core\perf\perf_reduce.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\core\perf\perf_sort.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\core\perf\perf_split.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\core\perf\perf_stat.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\core\perf\perf_umat.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\project\opencv.git\modules\core\perf\perf_precomp.hpp">
+      <Filter>opencv_core\Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\project\opencv.git\modules\world\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="opencv_core\Src">
+      <UniqueIdentifier>{EC9C1663-CF03-3C8C-83CF-1D8ECF1FF084}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_core\Include">
+      <UniqueIdentifier>{23BD3DD4-3E0D-3D38-B0CD-36ADE04063F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_core\Src\opencl">
+      <UniqueIdentifier>{6CC585DF-5070-3A41-95CE-43B32FC7F768}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_core\Src\cuda">
+      <UniqueIdentifier>{F17BB568-97BC-3CE3-A143-0D297A797B12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_core">
+      <UniqueIdentifier>{478401FC-4C5E-33F8-9E83-4DCA936C1ECC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

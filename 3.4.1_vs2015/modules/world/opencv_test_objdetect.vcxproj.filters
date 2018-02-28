@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\project\opencv.git\modules\objdetect\test\opencl\test_hogdetector.cpp">
+      <Filter>opencv_objdetect\Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\objdetect\test\test_cascadeandhog.cpp">
+      <Filter>opencv_objdetect\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\objdetect\test\test_main.cpp">
+      <Filter>opencv_objdetect\Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\project\opencv.git\modules\objdetect\test\test_precomp.hpp">
+      <Filter>opencv_objdetect\Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\project\opencv.git\modules\world\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="opencv_objdetect\Src\opencl">
+      <UniqueIdentifier>{E6FC67FF-5F38-38D0-8F93-63F4DA6CD7E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_objdetect\Src">
+      <UniqueIdentifier>{BBDB8973-66D4-3C58-866F-8816C5DFAF8F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_objdetect\Include">
+      <UniqueIdentifier>{8648C68D-EA50-3C0F-BFF0-A279E6DA6905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_objdetect">
+      <UniqueIdentifier>{18682B7C-9D35-3A16-A861-AFB096657A6E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

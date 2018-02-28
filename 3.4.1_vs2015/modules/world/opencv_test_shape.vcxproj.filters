@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\project\opencv.git\modules\shape\test\test_main.cpp">
+      <Filter>opencv_shape\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\shape\test\test_shape.cpp">
+      <Filter>opencv_shape\Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\project\opencv.git\modules\shape\test\test_precomp.hpp">
+      <Filter>opencv_shape\Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\project\opencv.git\modules\world\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="opencv_shape\Src">
+      <UniqueIdentifier>{039D61C2-57EA-3F77-BF04-B32594F2343F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_shape\Include">
+      <UniqueIdentifier>{E835CDBF-DCAF-349B-8EB0-B6EDC579C6BA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_shape">
+      <UniqueIdentifier>{00DBAE29-DF92-399E-AAA7-79BF240E9782}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

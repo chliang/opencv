@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\project\opencv.git\modules\features2d\test\ocl\test_brute_force_matcher.cpp">
+      <Filter>opencv_features2d\Src\ocl</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\features2d\test\ocl\test_feature2d.cpp">
+      <Filter>opencv_features2d\Src\ocl</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\features2d\test\test_agast.cpp">
+      <Filter>opencv_features2d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\features2d\test\test_akaze.cpp">
+      <Filter>opencv_features2d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\features2d\test\test_brisk.cpp">
+      <Filter>opencv_features2d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\features2d\test\test_descriptors_invariance.cpp">
+      <Filter>opencv_features2d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\features2d\test\test_descriptors_regression.cpp">
+      <Filter>opencv_features2d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\features2d\test\test_detectors_invariance.cpp">
+      <Filter>opencv_features2d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\features2d\test\test_detectors_regression.cpp">
+      <Filter>opencv_features2d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\features2d\test\test_fast.cpp">
+      <Filter>opencv_features2d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\features2d\test\test_keypoints.cpp">
+      <Filter>opencv_features2d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\features2d\test\test_main.cpp">
+      <Filter>opencv_features2d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\features2d\test\test_matchers_algorithmic.cpp">
+      <Filter>opencv_features2d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\features2d\test\test_mser.cpp">
+      <Filter>opencv_features2d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\features2d\test\test_nearestneighbors.cpp">
+      <Filter>opencv_features2d\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\features2d\test\test_orb.cpp">
+      <Filter>opencv_features2d\Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\project\opencv.git\modules\features2d\test\test_invariance_utils.hpp">
+      <Filter>opencv_features2d\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\project\opencv.git\modules\features2d\test\test_precomp.hpp">
+      <Filter>opencv_features2d\Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\project\opencv.git\modules\world\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="opencv_features2d\Src\ocl">
+      <UniqueIdentifier>{72244754-5A4C-3805-8AF7-0D7A85379D1F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_features2d\Src">
+      <UniqueIdentifier>{4D0B96E0-37CD-30B8-994F-B61839A37D41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_features2d\Include">
+      <UniqueIdentifier>{B59628EF-BA59-3B89-BF9E-7947CC06C6E8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_features2d">
+      <UniqueIdentifier>{FF5F901F-37BB-3F15-A43A-AD18A12CA911}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

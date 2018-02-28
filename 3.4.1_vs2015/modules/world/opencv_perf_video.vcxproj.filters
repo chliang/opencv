@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\project\opencv.git\modules\video\perf\opencl\perf_bgfg_knn.cpp">
+      <Filter>opencv_video\Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\video\perf\opencl\perf_bgfg_mog2.cpp">
+      <Filter>opencv_video\Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\video\perf\opencl\perf_motempl.cpp">
+      <Filter>opencv_video\Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\video\perf\opencl\perf_optflow_dualTVL1.cpp">
+      <Filter>opencv_video\Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\video\perf\opencl\perf_optflow_farneback.cpp">
+      <Filter>opencv_video\Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\video\perf\opencl\perf_optflow_pyrlk.cpp">
+      <Filter>opencv_video\Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\video\perf\perf_bgfg_knn.cpp">
+      <Filter>opencv_video\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\video\perf\perf_bgfg_mog2.cpp">
+      <Filter>opencv_video\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\video\perf\perf_ecc.cpp">
+      <Filter>opencv_video\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\video\perf\perf_main.cpp">
+      <Filter>opencv_video\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\video\perf\perf_optflowpyrlk.cpp">
+      <Filter>opencv_video\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\project\opencv.git\modules\video\perf\perf_tvl1optflow.cpp">
+      <Filter>opencv_video\Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\project\opencv.git\modules\video\perf\perf_bgfg_utils.hpp">
+      <Filter>opencv_video\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\project\opencv.git\modules\video\perf\perf_precomp.hpp">
+      <Filter>opencv_video\Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\project\opencv.git\modules\world\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="opencv_video\Src">
+      <UniqueIdentifier>{D0D29203-D617-3C33-916A-824350CF6474}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_video\Include">
+      <UniqueIdentifier>{2CCB951E-BB48-37E6-A2DC-7BFAA347282F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_video\Src\opencl">
+      <UniqueIdentifier>{64B3E49B-A1CE-3CEE-A9F2-5332E5545FE2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_video">
+      <UniqueIdentifier>{FAA17310-6541-36B8-B05E-A3F3774F2CDA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
