@@ -718,7 +718,10 @@ _exit_:
 
     return result;
 }
-
+bool JpegEncoder::write_label(const Mat& img, const std::string& label, const std::vector<int>& params)
+{
+	return true;
+}
 }
 
 #endif

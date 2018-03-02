@@ -22,3 +22,7 @@ bin/
 *.log
 *.tlog
 build
+/3.4.1_vs2015/OpenCV.VC.db
+/3.4.1_vs2015/OpenCV.VC.VC.opendb
+*.pdb
+/3.4.1_vs2015/3rdparty/lib/Debug

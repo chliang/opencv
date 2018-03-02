@@ -84,6 +84,7 @@ public:
     virtual ~JpegEncoder();
 
     bool  write( const Mat& img, const std::vector<int>& params );
+	bool  write_label(const Mat& img, const std::string& label, const std::vector<int>& params);
     ImageEncoder newEncoder() const;
 };
 

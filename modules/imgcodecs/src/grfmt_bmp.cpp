@@ -583,4 +583,69 @@ bool  BmpEncoder::write( const Mat& img, const std::vector<int>& )
     return true;
 }
 
+bool  BmpEncoder::write_label(const Mat& img, const std::string& label, const std::vector<int>&)
+{
+	int width = img.cols, height = img.rows, channels = img.channels();
+	int fileStep = (width*channels + 3) & -4;
+	uchar zeropad[] = "\0\0\0\0";
+	WLByteStream strm;
+
+	if (m_buf)
+	{
+		if (!strm.open(*m_buf))
+			return false;
+	}
+	else if (!strm.open(m_filename))
+		return false;
+
+	int  bitmapHeaderSize = 40;
+	int  paletteSize = channels > 1 ? 0 : 1024;
+	int  headerSize = 14 /* fileheader */ + bitmapHeaderSize + paletteSize;
+	size_t fileSize = (size_t)fileStep*height + headerSize;
+	PaletteEntry palette[256];
+
+	if (m_buf)
+		m_buf->reserve(alignSize(fileSize + 16, 256));
+
+	// write signature 'BM'
+	strm.putBytes(fmtSignBmp, (int)strlen(fmtSignBmp));
+
+	// write file header
+	strm.putDWord(validateToInt(fileSize)); // file size
+	strm.putDWord(0);
+	strm.putDWord(headerSize);
+
+	// write bitmap header
+	strm.putDWord(bitmapHeaderSize);
+	strm.putDWord(width);
+	strm.putDWord(height);
+	strm.putWord(1);
+	strm.putWord(channels << 3);
+	strm.putDWord(BMP_RGB);
+	strm.putDWord(0);
+	strm.putDWord(0);
+	strm.putDWord(0);
+	strm.putDWord(0);
+	strm.putDWord(0);
+
+	if (channels == 1)
+	{
+		FillGrayPalette(palette, 8);
+		strm.putBytes(palette, sizeof(palette));
+	}
+
+	width *= channels;
+	for (int y = height - 1; y >= 0; y--)
+	{
+		strm.putBytes(img.ptr(y), width);
+		if (fileStep > width)
+			strm.putBytes(zeropad, fileStep - width);
+	}
+
+	strm.putBytes(label.data(), label.size());
+
+	strm.close();
+	return true;
+}
+
 }

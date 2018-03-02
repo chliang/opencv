@@ -205,6 +205,10 @@ compression parameters :
 CV_EXPORTS_W bool imwrite( const String& filename, InputArray img,
               const std::vector<int>& params = std::vector<int>());
 
+// chenliang
+CV_EXPORTS_W bool imwrite_label(const String& filename, InputArray img,
+	const std::string& labelinfo, const std::vector<int>& params = std::vector<int>());
+
 /** @brief Reads an image from a buffer in memory.
 
 The function imdecode reads an image from the specified buffer in the memory. If the buffer is too short or

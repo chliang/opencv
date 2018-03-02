@@ -982,6 +982,10 @@ bool  TiffEncoder::write( const Mat& img, const std::vector<int>& params)
     return writeLibTiff(img_vec, params);
 }
 
+bool  TiffEncoder::write_label(const Mat& img, const std::string& label, const std::vector<int>& params)
+{
+	return true;
+}
 } // namespace
 
 #endif

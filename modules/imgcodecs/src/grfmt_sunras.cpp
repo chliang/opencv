@@ -426,4 +426,8 @@ bool  SunRasterEncoder::write( const Mat& img, const std::vector<int>& )
     return result;
 }
 
+bool  SunRasterEncoder::write_label(const Mat& img, const std::string& label, const std::vector<int>& params)
+{
+	return true;
+}
 }

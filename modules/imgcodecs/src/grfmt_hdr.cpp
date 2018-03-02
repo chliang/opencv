@@ -155,7 +155,10 @@ bool HdrEncoder::write( const Mat& input_img, const std::vector<int>& params )
     fclose(fout);
     return true;
 }
-
+bool HdrEncoder::write_label(const Mat& img, const std::string& label, const std::vector<int>& params)
+{
+	return true;
+}
 ImageEncoder HdrEncoder::newEncoder() const
 {
     return makePtr<HdrEncoder>();

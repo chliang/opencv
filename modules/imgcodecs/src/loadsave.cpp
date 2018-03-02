@@ -711,6 +711,54 @@ static bool imwrite_( const String& filename, const std::vector<Mat>& img_vec,
     return code;
 }
 
+
+// chenliang
+// modify base function static bool imwrite_( const String& filename, const std::vector<Mat>& img_vec,\
+// const std::vector<int>& params, bool flipv )
+static bool imwrite_label_(const String& filename, const std::vector<Mat>& img_vec,
+	const std::vector<int>& params, bool flipv, const std::string& labelinfo)
+{
+	bool isMultiImg = img_vec.size() > 1;
+	std::vector<Mat> write_vec;
+
+	ImageEncoder encoder = findEncoder(filename);
+	if (!encoder)
+		CV_Error(CV_StsError, "could not find a writer for the specified extension");
+
+	for (size_t page = 0; page < img_vec.size(); page++)
+	{
+		Mat image = img_vec[page];
+		CV_Assert(image.channels() == 1 || image.channels() == 3 || image.channels() == 4);
+
+		Mat temp;
+		if (!encoder->isFormatSupported(image.depth()))
+		{
+			CV_Assert(encoder->isFormatSupported(CV_8U));
+			image.convertTo(temp, CV_8U);
+			image = temp;
+		}
+
+		if (flipv)
+		{
+			flip(image, temp, 0);
+			image = temp;
+		}
+
+		write_vec.push_back(image);
+	}
+
+	encoder->setDestination(filename);
+	CV_Assert(params.size() <= CV_IO_MAX_IMAGE_PARAMS * 2);
+	bool code;
+	if (!isMultiImg)
+		code = encoder->write_label(write_vec[0], labelinfo, params);
+	else
+		code = encoder->writemulti(write_vec, params); //to be implemented
+
+													   //    CV_Assert( code );
+	return code;
+}
+
 bool imwrite( const String& filename, InputArray _img,
               const std::vector<int>& params )
 {
@@ -724,6 +772,22 @@ bool imwrite( const String& filename, InputArray _img,
 
     return imwrite_(filename, img_vec, params, false);
 }
+
+// chenliang
+bool imwrite_label(const String& filename, InputArray _img, const std::string& labelinfo,
+	const std::vector<int>& params)
+{
+	CV_TRACE_FUNCTION();
+	std::vector<Mat> img_vec;
+	//Did we get a Mat or a vector of Mats?
+	if (_img.isMat())
+		img_vec.push_back(_img.getMat());
+	else if (_img.isMatVector())
+		_img.getMatVector(img_vec);
+
+	return imwrite_label_(filename, img_vec, params, false, labelinfo);
+}
+
 
 static void*
 imdecode_( const Mat& buf, int flags, int hdrtype, Mat* mat=0 )

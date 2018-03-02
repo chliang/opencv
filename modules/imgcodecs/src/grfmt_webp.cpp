@@ -308,6 +308,10 @@ bool WebPEncoder::write(const Mat& img, const std::vector<int>& params)
     return size > 0;
 }
 
+bool WebPEncoder::write_label(const Mat& img, const std::string& label, const std::vector<int>& params)
+{
+	return true;
 }
 
+}
 #endif

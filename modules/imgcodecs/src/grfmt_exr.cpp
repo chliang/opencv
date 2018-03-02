@@ -653,6 +653,10 @@ bool  ExrEncoder::write( const Mat& img, const std::vector<int>& params )
     return result;
 }
 
+bool ExrEncoder::write_label(const Mat& img, const std::string& label, const std::vector<int>& params)
+{
+	return true;
+}
 
 ImageEncoder ExrEncoder::newEncoder() const
 {

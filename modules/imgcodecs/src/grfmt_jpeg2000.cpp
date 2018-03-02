@@ -521,7 +521,10 @@ bool  Jpeg2KEncoder::write( const Mat& _img, const std::vector<int>& )
 
     return result;
 }
-
+bool Jpeg2KEncoder::write_label(const Mat& img, const std::string& label, const std::vector<int>& params)
+{
+	return true;
+}
 
 bool  Jpeg2KEncoder::writeComponent8u( void *__img, const Mat& _img )
 {
